@@ -165,7 +165,7 @@ footer {
     line-height: 1.5;
 }
 
-[class*="eco"] {
+.eco-text {
     color: #808080;
 }
 
