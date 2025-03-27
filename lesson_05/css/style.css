@@ -7,7 +7,7 @@ body {
 }
 
 .header,
-.platform-wpapper,
+.platform-wrapper,
 .footer {
     max-width: 1050px;
     margin: 0 auto;
@@ -147,7 +147,7 @@ body {
     min-width: 200px;
 }
 
-.tow {
+.two {
     white-space: nowrap;
     overflow: auto;
 }
