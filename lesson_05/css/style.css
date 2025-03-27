@@ -45,9 +45,12 @@ body {
 .platform-text p {
     margin-bottom: 18px;
     color: #5A54F2;
-    line-height: 24px;
     letter-spacing: 0.2px;
 }
+
+.platform-text span{
+    line-height: 24px;
+}   
 
 .platform-text p + p,
 .platform-text p + p + p,
