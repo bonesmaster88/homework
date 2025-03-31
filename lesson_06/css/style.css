@@ -70,6 +70,10 @@ body {
     padding-top: 20px;
 }
 
+.item img{
+    max-width: 40px;
+}   
+
 .item-text p {
     max-width: 360px;
     margin-bottom: 8px;
