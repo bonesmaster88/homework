@@ -94,10 +94,10 @@ body {
 }
 
 .about-img img {
-    border-top-left-radius: 240px;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 240px;
-    border-bottom-left-radius: 100px;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 19%;
+    border-bottom-right-radius: 45%;
+    border-bottom-left-radius: 19%;
 }
 
 .about-text {
