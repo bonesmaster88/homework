@@ -2,9 +2,9 @@
 
 body {
     color: #fff;
-    line-height: 1.5;
     background-color: #302C42;
     font-family: "Montserrat", sans-serif;
+    line-height: 1.2;
 }
 
 .wrapper {
@@ -116,7 +116,6 @@ body {
 
 .about-caption p {
     margin-bottom: 5px;
-    line-height: normal;
 }
 
 .about-caption span {
@@ -127,7 +126,7 @@ body {
 .about-description {
     margin-bottom: 30px;
     color: rgba(255, 255, 255, 0.8);
-
+    line-height: 1.625;
 }
 
 .about-button {
@@ -160,6 +159,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     color: #808080;
+    line-height: 1.5;
 }
 
 .eco-text > div {
