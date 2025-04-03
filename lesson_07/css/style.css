@@ -149,7 +149,8 @@ body {
    max-width: 520px;
 }
 
-.best-description > *:not(:last-child) {
+.best-description > *:not(:last-child),
+.best-description li:not(:last-child){
    margin-bottom: 20px;
 }
 
@@ -157,9 +158,8 @@ body {
    font-size: 34px;
 }
 
-.best-description ul li {
+.best-description li {
    font-size: 20px;
-   line-height: 2.55;
 }
 
 .best-description li::before {
