@@ -81,12 +81,9 @@ h1 {
    color: #fff;
 }
 
-h1 strong{
-   display: block;
-}
-
 h1 strong,
-.best-caption span {
+.best-description h2 strong{
+   display: block;
    font-weight: 700;
 }
 
@@ -162,7 +159,7 @@ h1 strong,
    margin-bottom: 20px;
 }
 
-.best-caption {
+.best-caption h2{
    font-size: 34px;
 }
 
