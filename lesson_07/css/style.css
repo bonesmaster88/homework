@@ -27,7 +27,8 @@ body {
 }
 
 .faculty,
-.footer {
+.footer,
+.caption {
    background-color: #412672;
 }
 
@@ -49,6 +50,23 @@ body {
 .header-container a:hover,
 .footer-container a:hover {
    color: #fff;
+}
+
+/* -- */
+
+.caption{
+   padding: 15px 0;
+}
+
+h1{
+   text-align: center;
+}
+
+h1,
+.faculty h2 {
+   font-size: 38px;
+   color: #fff;
+   font-weight: 600;
 }
 
 /* -- */
@@ -75,13 +93,11 @@ body {
    overflow: hidden;
 }
 
-h1 {
+.faculty h2 {
    padding-bottom: 30px;
-   font-size: 38px;
-   color: #fff;
 }
 
-h1 strong,
+.faculty h2 strong,
 .best-description h2 strong{
    display: block;
    font-weight: 700;
@@ -123,7 +139,7 @@ h1 strong,
    height: 265px;
 }
 
-.content span {
+.content h3 {
    display: inline-block;
    color: #000;
    font-weight: 600;
