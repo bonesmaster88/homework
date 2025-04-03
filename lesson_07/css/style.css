@@ -117,11 +117,6 @@ body {
    margin-bottom: 16px;
 }
 
-.content img {
-   width: 100%;
-   max-width: 390px;
-}
-
 .content span {
    display: inline-block;
    color: #000;
