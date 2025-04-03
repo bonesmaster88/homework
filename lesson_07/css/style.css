@@ -75,13 +75,17 @@ body {
    overflow: hidden;
 }
 
-.caption-block {
+h1 {
    padding-bottom: 30px;
    font-size: 38px;
    color: #fff;
 }
 
-.caption-block span,
+h1 strong{
+   display: block;
+}
+
+h1 strong,
 .best-caption span {
    font-weight: 700;
 }
