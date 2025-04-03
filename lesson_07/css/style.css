@@ -171,9 +171,12 @@ h1,
    max-width: 520px;
 }
 
-.best-description > *:not(:last-child),
-.best-description li:not(:last-child){
+.best-description > *:not(:last-child){
    margin-bottom: 20px;
+}
+
+.best-description li:not(:last-child){
+   margin-bottom: 30px;
 }
 
 .best-description h2{
