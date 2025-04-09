@@ -1,0 +1,75 @@
+@import url("reset.css");
+
+body {
+   font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+}
+
+[class*="container"] {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.header,
+.icons{
+   background-color: rgba(18, 11, 11, 0.51);
+
+}
+
+.header img,
+.footer img{
+   width: 100%;
+   max-width: 394px;
+}
+
+/* -- */
+
+.header > div,
+.page > div:not(:last-child){
+   margin-bottom: 40px;
+}
+
+.bg img:not(:last-of-type),
+.images img:not(:last-of-type){
+   margin-bottom: 20px;
+}
+
+.bg-container img{
+   max-width: 400px;
+   vertical-align: middle;
+}
+
+.images-container img{
+   max-width: 300px;
+}
+
+.founder{
+   border-radius: 27% 0;
+}
+
+.bali,
+.paris,
+.italy{
+   border-radius: 3.33%;
+}
+
+.dubai{
+   border-radius: 3% / 7%;
+}
+
+.icons img{
+   width: 70px;
+   padding: 15px;
+}
+
+/* -- */
+
+.footer{
+   padding: 20px 0;
+   text-align: center;
+}
