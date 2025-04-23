@@ -180,8 +180,8 @@ body {
    stroke: none;
 }
 
-.item-product__cart-button:hover svg path {
-   stroke-width: 1.7;
+.item-product .item-product__cart-button:hover svg circle {
+   fill: #2C742F;
 }
 
 /* -----FEATURES----- */
