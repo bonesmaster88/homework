@@ -119,25 +119,20 @@ body {
 }
 
 .item-product__cart-button,
-.item-product__cart-button-hover {
-   bottom: 6px;
-   right: 11px;
-}
-
-.item-product__cart-button-hover {
-   opacity: 0;
-   visibility: hidden;
-}
-
 .item-product__wishlist-button,
-.item-product__wishlist-button-hover {
+.item-product__quick-view-button{
    right: 11px;
+}
+
+.item-product__cart-button{
+   bottom: 6px;
+}
+
+.item-product__wishlist-button{
    top: 11px;
 }
 
-.item-product__quick-view-button,
-.item-product__quick-view-button-hover {
-   right: 11px;
+.item-product__quick-view-button{
    top: 57px;
 }
 
@@ -152,7 +147,6 @@ body {
 
 .item-product .item-product__title:hover {
    color: rgba(44, 116, 47, 0.90);
-   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .item-product__wishlist-button,
