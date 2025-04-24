@@ -93,7 +93,7 @@ body {
 }
 
 .item-product {
-   border: 1px solid transparent;
+   border: 1px solid #E6E6E6;
 }
 
 .item-product__content {
