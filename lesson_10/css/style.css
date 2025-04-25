@@ -89,11 +89,8 @@ body {
    font-size: 16px;
 }
 
-.item-product {
+.products__item-product {
    position: relative;
-}
-
-.item-product {
    border: 1px solid #E6E6E6;
 }
 
