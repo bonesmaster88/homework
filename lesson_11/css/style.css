@@ -67,7 +67,6 @@ body {
    left: 790px;
    top: 235px;
    perspective: 500px;
-   transform-style: preserve-3d;
 }
 
 .mark__body {
@@ -274,11 +273,10 @@ body {
    left: 755px;
    transform: rotateY(0deg);
    perspective: 400px;
-   transform-style: preserve-3d;
 }
 
 .towed-element--small .towed-element__body {
-   transform: rotateY(-40deg) scale(0.2);
+   transform: rotateY(40deg) scale(0.2);
 }
 
 /* -----tow-truck----- */
