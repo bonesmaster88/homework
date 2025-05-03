@@ -282,13 +282,11 @@ body {
 /* -----tow-truck----- */
 
 .composition__tow-truck {
-   /* background-color: red; */
    top: 470px;
    left: 620px;
 }
 
 .tow-truck__frame {
-   /* background-color: rgba(0, 0, 0, .1); */
    width: 620px;
    height: 190px;
 }
