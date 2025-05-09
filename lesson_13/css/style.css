@@ -256,7 +256,6 @@ body {
 .highlights__column:hover img {
    transform: scale(1.05) translateX(-3px);
    transition-duration: .4s;
-   /* will-change: transform; */
 }
 
 .highlights__column:hover .item-highlight__text{
@@ -267,7 +266,6 @@ body {
 .item-highlight__text {
    text-align: center;
    color: #fff;
-   /* will-change: transform; */
 }
 
 .item-highlight__text>*:not(:last-child) {
