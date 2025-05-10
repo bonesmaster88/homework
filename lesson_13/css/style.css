@@ -161,9 +161,7 @@ body {
 }
 
 .branches__content {
-   display: flex;
    flex-basis: 520px;
-   padding: 15px 15px 15px 0;
 }
 
 .branches__body>*:not(:last-child) {
@@ -205,9 +203,8 @@ body {
 
 .branches__image {
    flex-basis: 790px;
-   padding: 15px;
-   margin-right: -120px;
-   transform: translateX(100px);
+   margin-right: -130px;
+   transform: translateX(80px);
 }
 
 .branches__image img {
