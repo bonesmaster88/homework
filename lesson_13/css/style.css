@@ -24,12 +24,6 @@ body {
    flex-grow: 1;
 }
 
-.title,
-.item-highlight__text{
-   display: flex;
-   flex-direction: column;
-}
-
 .title strong,
 .item-highlight__text strong {
    font-weight: 700;
@@ -271,6 +265,8 @@ body {
 }
 
 .item-highlight__text {
+   display: flex;
+   flex-direction: column;
    text-align: center;
    color: #fff;
 }
