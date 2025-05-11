@@ -207,6 +207,7 @@ body {
 }
 
 .branches__image:hover img {
+   height: 520px;
    transform: scale(1.01);
 }
 
