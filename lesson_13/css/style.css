@@ -178,7 +178,7 @@ body {
 }
 
 .branches__list ul>li {
-   display: inline-flex;
+   display: flex;
    column-gap: 15px;
    align-items: center;
 }
@@ -197,9 +197,9 @@ body {
 }
 
 .branches__image {
-   flex-basis: 790px;
-   margin-right: -130px;
-   transform: translateX(80px);
+   flex-basis: 770px;
+   margin-right: -110px;
+   transform: translateX(60px);
 }
 
 .branches__image img {
@@ -233,6 +233,7 @@ body {
 }
 
 .highlights__column {
+   flex-basis: 210px;
    min-height: 70px;
 }
 
