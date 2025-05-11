@@ -89,6 +89,7 @@ body {
 }
 
 .prof-card__image img {
+   height: 266px;
    transition-duration: .2s;
 }
 
