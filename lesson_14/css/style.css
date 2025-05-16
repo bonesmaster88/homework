@@ -80,6 +80,7 @@ select {
 textarea {
    min-height: 100px;
    resize: vertical;
+   padding: 14px 16px;
 }
 
 input::placeholder,
