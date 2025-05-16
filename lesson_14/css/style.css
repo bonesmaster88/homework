@@ -66,7 +66,6 @@ body {
 input,
 textarea,
 select {
-   padding: 14px 16px;
    border-radius: 6px;
    border: 1px solid #E6E6E6;
 }
@@ -74,10 +73,12 @@ select {
 input,
 select {
    height: 49px;
+   padding: 0px 16px;
 }
 
 textarea {
    min-height: 100px;
+    padding: 14px 16px;
    resize: vertical;
 }
 
