@@ -67,7 +67,7 @@ body {
 input,
 textarea,
 select {
-   padding: 0 16px;
+   padding: 14px 16px;
    border-radius: 6px;
    border: 1px solid #E6E6E6;
 }
@@ -80,7 +80,6 @@ select {
 textarea {
    min-height: 100px;
    resize: vertical;
-   padding: 14px 16px;
 }
 
 input::placeholder,
