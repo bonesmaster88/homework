@@ -72,13 +72,13 @@ select {
 
 input,
 select {
-/*    height: 49px; */
+   height: 49px;
    padding: 0px 16px;
 }
 
 textarea {
    min-height: 100px;
-    padding: 14px 16px;
+   padding: 14px 16px;
    resize: vertical;
 }
 
