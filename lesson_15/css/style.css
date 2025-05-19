@@ -60,11 +60,6 @@ body {
    transition: stroke .3s;
 }
 
-.view-all-link:hover svg path,
-.read-more-link:hover svg path {
-   stroke: #2C742F;
-   transition: stroke .3s;
-}
 
 .sale-icon {
    display: inline-block;
@@ -148,7 +143,7 @@ body {
    display: flex;
    flex-direction: column;
    flex-grow: 1;
-   row-gap: 4px;
+   row-gap: 3px;
    max-width: 79%;
    padding: 12px;
 }
@@ -205,6 +200,13 @@ body {
 }
 
 .item-product__cart svg,
+.item-product__wishlist svg,
+.item-product__quick-view svg {
+   width: 100%;
+   height: 100%;
+}
+
+.item-product__cart svg,
 .item-product__actions-group svg {
    width: 100%;
    height: 100%;
@@ -218,7 +220,7 @@ body {
 }
 
 .item-product__cart {
-   bottom: 30px;
+   bottom: 33px;
 }
 
 .item-product__actions-group {
@@ -240,6 +242,12 @@ body {
       color: #2C742F;
       transition: color .3s;
    }
+
+   .view-all-link:hover svg path,
+   .read-more-link:hover svg path {
+      stroke: #2C742F;
+      transition: stroke .3s;
+}
 
    .date-icon:hover {
       background-color: #d9d9d9;
@@ -336,7 +344,7 @@ body {
    }
 
    .item-product__price {
-      margin-bottom: 5px;
+      /* margin-bottom: 5px; */
       font-size: 15px;
    }
 
@@ -346,7 +354,7 @@ body {
    }
 
    .item-product__cart {
-      bottom: 26px;
+      bottom: 30px;
    }
 
 }
@@ -378,17 +386,9 @@ body {
       flex: 0 0 calc(100% + 1px);
    }
 
-   .item-product__content {
-      row-gap: 7px;
-   }
-
    .item-product__title,
    .item-product__price {
       font-size: 20px;
-   }
-
-   .item-product__price {
-      margin-bottom: 9px;
    }
 
    .item-product__rating-stars img {
@@ -400,25 +400,18 @@ body {
       text-decoration-thickness: 2px;
    }
 
-   .item-product__cart svg,
-   .item-product__wishlist svg,
-   .item-product__quick-view svg {
-      width: 60px;
-      height: 60px;
-   }
-
    .item-product__cart,
    .item-product__actions-group {
-      right: 34px;
+      right: 24px;
    }
 
    .item-product__cart {
-      bottom: 50px;
+      bottom: 32px;
    }
 
    .item-product__actions-group {
       top: 16px;
-      row-gap: 30px;
+      row-gap: 10px;
    }
 
 }
