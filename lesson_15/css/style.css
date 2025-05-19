@@ -379,7 +379,7 @@ body {
    }
 
    .item-product__content {
-      row-gap: 10px;
+      row-gap: 7px;
    }
 
    .item-product__title,
@@ -388,7 +388,7 @@ body {
    }
 
    .item-product__price {
-      margin-bottom: 12px;
+      margin-bottom: 9px;
    }
 
    .item-product__rating-stars img {
