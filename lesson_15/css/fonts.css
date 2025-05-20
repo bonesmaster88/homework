@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Circular Std';
+    src: url("../fonts/CircularStd-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
