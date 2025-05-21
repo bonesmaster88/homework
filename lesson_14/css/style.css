@@ -248,6 +248,7 @@ select:focus-visible,
 
 .form__summary {
    flex-basis: 424px;
+   align-self: flex-start;
    padding: 24px;
    border-radius: 8px;
    border: 1px solid #E6E6E6;
