@@ -227,14 +227,11 @@ select:focus-visible,
    border: 1px solid #00B307;
 }
 
-.checkbox__input:checked +.checkbox__label::before {
-   background: url('../img/icon/checked.svg') center no-repeat;
-
-}
-
-.checkbox__input:checked{
-   border: 1px solid #00B307;
-   background: url('../img/icon/checked.svg') center no-repeat;
+.checkbox__input:checked +.checkbox__label::before{
+   background-color: #00B207;
+   background-image:  url('../img/icon/checked-arrow.svg');
+   background-position: center;
+   background-repeat: no-repeat;
 }
 
 .form__decor {
