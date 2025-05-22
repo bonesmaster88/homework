@@ -664,7 +664,7 @@ body {
    }
 
    .item-product__price--old span {
-      text-decoration-thickness: 2px;
+/*       text-decoration-thickness: 2px; */
    }
 
    .item-product__actions-group {
