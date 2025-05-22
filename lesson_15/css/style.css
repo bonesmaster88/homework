@@ -663,10 +663,6 @@ body {
       height: 18px;
    }
 
-   .item-product__price--old span {
-/*       text-decoration-thickness: 2px; */
-   }
-
    .item-product__actions-group {
        row-gap: 10px;
    }
