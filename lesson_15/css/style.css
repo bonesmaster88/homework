@@ -65,6 +65,11 @@ body {
    top: 16px;
    left: 16px;
    z-index: 3;
+   max-width: 60%;
+}
+
+.offer-icons > *:not(:last-child){
+   margin-bottom: 10px;
 }
 
 .sale-icon {
