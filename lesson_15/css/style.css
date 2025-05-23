@@ -489,7 +489,7 @@ body {
       transition: .3s;
    }
 
-   .news__item:hover .item-news__title a {
+   .news__item:hover .item-news__title{
       color: #377b3a;
       transition: .3s;
    }
@@ -497,10 +497,6 @@ body {
    .news__item:hover .date-icon {
       background-color: #fff;
       transition: background-color .3s;
-   }
-
-   .news__item .item-news__title a:hover {
-      color: #1A1A1A;
    }
 
    .item-news__meta>div:hover a {
