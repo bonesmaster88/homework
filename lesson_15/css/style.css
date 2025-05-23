@@ -532,13 +532,6 @@ body {
 
 }
 
-@media (max-width: 1070px) {
-   .featured__item-product {
-      flex: 0 0 calc(25% + 1px);
-   }
-
-}
-
 
 @media (max-width: 1142px) {
 
@@ -565,6 +558,13 @@ body {
    .item-news__meta {
       flex-wrap: wrap;
    }
+}
+
+@media (max-width: 1070px) {
+   .featured__item-product {
+      flex: 0 0 calc(25% + 1px);
+   }
+
 }
 
 @media (max-width: 860px) {
