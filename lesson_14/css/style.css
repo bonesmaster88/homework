@@ -336,14 +336,28 @@ select:focus-visible,
    margin-bottom: 11px;
 }
 
-.radio__input:checked +.radio__label::before {
-   background: url('../img/icon/radio-checked.svg') center no-repeat;
-}
-
 .radio__label {
+   position: relative;
    column-gap: 6px;
 }
 
 .radio__label::before {
    border-radius: 50%;
+}
+
+.radio__input:checked +.radio__label::before {
+   border: 2px solid #00B307;
+   transition: border .01s;
+}
+
+.radio__input:checked +.radio__label::after{
+   position: absolute;
+   left: 4px;
+   top: 4px;
+   content: '';
+   flex-shrink: 0;
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background-color: #00B307;
 }
