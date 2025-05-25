@@ -55,6 +55,11 @@ body {
    font-weight: 600;
 }
 
+.view-all-link svg ,
+.read-more-link svg {
+    transition: transform .4s;
+ }
+
 .view-all-link svg path,
 .read-more-link svg path {
    transition: stroke .3s;
@@ -427,9 +432,16 @@ body {
       transition: color .3s;
    }
 
+   .view-all-link:hover svg ,
+   .read-more-link:hover svg {
+      transform: translateX(3px);
+      transition: transform .4s;
+   }
+
    .view-all-link:hover svg path,
    .read-more-link:hover svg path {
       stroke: #2C742F;
+      transition: stroke .3s;
     }
 
 
