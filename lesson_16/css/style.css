@@ -14,6 +14,7 @@ body {
    font-size: 13px;
    font-weight: 500;
    color: #000;
+
 }
 
 [class*="__container"] {
@@ -24,6 +25,10 @@ body {
 
 .page {
    flex-grow: 1;
+}
+
+.page > *:not(:last-child){
+   margin-bottom: 30px;
 }
 
 /* -----components----- */
@@ -55,16 +60,35 @@ body {
 /* -----HEADER----- */
 
 .header{
-   padding: 30px 0;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 10;
+}
+
+.header::before{
+   position: absolute;
+   content: '';
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.60);
+   backdrop-filter: blur(50px);
+   /* z-index: 1; */
 }
 
 .header__body{
    position: relative;
+   top: 0;
+   left: 0;
    display: flex;
-   /* flex-wrap: wrap; */
+   height: 100px;
    column-gap: 15px;
    justify-content: space-between;
    align-items: center;
+   z-index: 1;
 }
 
 .header__logo{
@@ -100,26 +124,6 @@ h1{
    position: relative;
 }
 
-/* .header__menu > ul li::before{
-   position: absolute;
-   bottom: 0;
-   content: '';
-   width: 1px;
-   height: 1px;
-   left: 50%;
-   background-color: #F26522;
-   opacity: 0;
-   visibility: hidden;
-   transition: .5s;
-}
-
-.header__menu > ul li:hover::before{
-   width: 100%;
-   left: 0;
-   opacity: 1;
-   visibility: visible;
-} */
-
 .menu__body > ul li::before{
    position: absolute;
    bottom: 0;
@@ -141,6 +145,76 @@ h1{
 .icon-menu{
    display: none;
 }
+
+/* -----HERO-----*/
+
+.page__hero{
+   position: relative;
+}
+
+.page__hero::before{
+   position: absolute;
+   content: '';
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   /* тень на фото */
+}
+
+.page__hero .hero__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.hero__content{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   padding: 144px 0;
+   align-items: center;
+   text-align: center;
+   z-index: 1;
+   color: #FFF;
+}
+
+
+.hero__content h2{
+    text-shadow: -8.337px 55.023px 15.84px rgba(0, 0, 0, 0.00), -5.836px 35.015px 14.173px rgba(0, 0, 0, 0.01), -3.335px 20.008px 11.672px rgba(0, 0, 0, 0.02), -1.667px 9.171px 9.171px rgba(0, 0, 0, 0.03), 0px 2.501px 5.002px rgba(0, 0, 0, 0.04);
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.hero__content p{
+   max-width: 594px;
+   text-shadow: -7.962px 52.552px 15.129px rgba(0, 0, 0, 0.00), -5.574px 33.442px 13.536px rgba(0, 0, 0, 0.01), -3.185px 19.11px 11.147px rgba(0, 0, 0, 0.02), -1.592px 8.759px 8.759px rgba(0, 0, 0, 0.03), 0px 2.389px 4.777px rgba(0, 0, 0, 0.04);
+   font-size: 17.5174px;
+   font-weight: 300;
+   line-height: 1.3;
+}
+
+.hero__content button{
+   text-align: center;
+}
+
+.hero__content .button{
+   padding: 14px 44px;
+   font-size: 20px;
+}
+
+.hero__content .button img{
+   width: 24px;
+}
+
+
+
 
 /* -----FOOTER----- */
 
@@ -166,6 +240,7 @@ h1{
 
 
    .button:hover{
+      background-color: #BE4301;
       background-color: #BE4301;
       transition: background-color .3s;
    }
@@ -233,7 +308,6 @@ h1{
 
 @media (max-width: 767.98px) {
 
-
    .menu__body{
       opacity: 0;
       visibility: hidden;
@@ -245,7 +319,7 @@ h1{
       width: 100%;
       height: 100%;
 
-      z-index: 3;
+      /* z-index: 7; */
       background-color: #f4ddcf;
       padding: 40px 15px 30px 15px;
    }
@@ -261,9 +335,9 @@ h1{
    .icon-menu{
       position: relative;
       display: block;
-      width: 30px;
-      height: 18px;
-      z-index: 4;
+      width: 33px;
+      height: 22px;
+      z-index: 5;
     }
 
     .icon-menu::before,
@@ -296,7 +370,7 @@ h1{
 @media (max-width: 450px){
 
    .header{
-      padding: 25px 0;
+      padding: 15px 0 30px 0;
    }
 
    .header__body,
@@ -306,22 +380,22 @@ h1{
     }
 
     .header__logo{
-      row-gap: 10px;
+      row-gap: 5px;
     }
 
 
-    .header__body .header__logo{
-        margin-bottom: 15px;
+   .header__logo{
+        margin-bottom: 12px;
     }
 
 
    .header__logo img{
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
    }
 
    h1{
-      font-size: 20px;
+      font-size: 18px;
    }
 
    .icon-menu{
@@ -331,8 +405,8 @@ h1{
    }
 
    .button{
-      padding: 8px 35px;
-      font-size: 15px;
+      padding: 7px 33px;
+      font-size: 17px;
    }
 
 }
