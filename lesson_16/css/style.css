@@ -466,7 +466,7 @@ h1 {
 @media (max-width: 450px) {
 
    .header {
-      padding: 15px 0 20px 0;
+      padding: 15px 0 15px 0;
    }
 
    .header::before {
@@ -480,16 +480,16 @@ h1 {
    }
 
    .header__logo {
-      row-gap: 5px;
+      row-gap: 2px;
    }
 
    .header__logo {
-      margin-bottom: 12px;
+      margin-bottom: 6px;
    }
 
    .header__logo img {
-      width: 30px;
-      height: 30px;
+      width: 24px;
+      height: 24px;
    }
 
    .menu__body {
@@ -501,7 +501,7 @@ h1 {
    }
 
    h1 {
-      font-size: 18px;
+      font-size: 15px;
    }
 
    .icon-menu {
