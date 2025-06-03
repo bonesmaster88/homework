@@ -1,10 +1,5 @@
-@import url("fonts.css");
+@import url("../fonts/fonts.css");
 @import url("reset.css");
-
-body {
-   font-family: "KoPub Batang", serif;
-   line-height: 1.1;
-}
 
 .wrapper {
    display: flex;
@@ -12,6 +7,7 @@ body {
    min-height: 100%;
    overflow: clip;
    font-size: 20px;
+   color: #000;
    background-color: #F8F3EC;
 
 }
@@ -124,6 +120,11 @@ body {
 /* --------------------------- */
 /* --------------------------- */
 
+.catalog__body{
+   font-family: "KoPub Batang", serif;
+   line-height: 1.1;
+}
+
 .catalog__gallery{
    position: relative;
    display: grid;
@@ -145,13 +146,14 @@ body {
 
 }
 
+.title{
+   font-size: 60px;
+   font-weight: 300;
+}
+
 .gallery__title{
    margin-bottom: 45px;
    padding-left: 35.833%;
-   font-size: 60px;
-   font-weight: 300;
-
-   background-color: red;
 }
 
 .item-gallery__img{
@@ -221,6 +223,12 @@ body {
 
 /* -----MEDIA----- */
 
+@media(max-width:1160px){
+   .gallery__title{
+      font-size: 47px;
+   }
+}
+
 @media(max-width:1120px){
 
    .gallery__title{
@@ -287,10 +295,22 @@ body {
    }
 }
 
-@media(max-width:650px){
+@media(max-width:840px){
+   .item-gallery__title {
+      font-size: 18px;
+  }
 
+  .item-gallery__actions{
+   display: flex;
+   column-gap: 10px;
+}
+
+}
+
+@media(max-width:767.98px){
    .gallery__title{
-      font-size: 30px;
+      font-size: 40px;
+      margin-bottom: 40px;
       padding-left: 0;
    }
 
@@ -306,7 +326,7 @@ body {
       /* background-color: red; */
    }
 
-   .gallery__item:nth-of-type(3n+1) .gallery__item-link{
+   .gallery__item:nth-of-type(3n+1) .item-gallery__img{
       aspect-ratio: 367/378;
    }
 
@@ -317,43 +337,55 @@ body {
    .button-mob{
       display: flex;
       justify-self: center;
-      /* margin-top: -10px; */
       padding: 9px 72px;
       border: 6px solid #F8F3EC;
-
    }
 
    .item-gallery__content{
       flex-grow: 1;
    }
 
-
 }
 
-@media(max-width:500px){
+@media(max-width:700px){
 
    .catalog__gallery{
       grid-template-columns: 1fr 1fr;
+      margin-bottom: 40px;
     }
 
-}
+   }
 
-@media(max-width:390px){
-
-   .gallery__title{
-      font-size: 30px;
-      margin-bottom: 50px;
-    }
-
-
-}
-
-@media(max-width:370px){
+@media(max-width:550px){
 
    .catalog__gallery{
        grid-template-columns: 1fr;
        row-gap: 50px;
     }
 
+     .gallery__title{
+      font-size: 35px;
+      margin-bottom: 50px;
+    }
 
+    .item-gallery__actions{
+      column-gap: 20px;
+   }
+
+   .item-gallery__cart{
+      width: 24px;
+      height: 24px;
+   }
+
+   .item-gallery__favorite{
+      width: 23px;
+      height: 23px;
+   }
+
+}
+
+@media(max-width:400px){
+   .gallery__title{
+      font-size: 30px;
+    }
 }
