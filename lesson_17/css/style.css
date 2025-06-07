@@ -1014,6 +1014,10 @@ h1 {
       font-size: 26px;
    }
 
+   .promo-item__img{
+      flex-basis: 120px;
+   }
+
 }
 
 @media(max-width:550px) {
