@@ -77,7 +77,7 @@
 
 .hero__inner{
    width: 18.75rem;
-   height: 9.375rem;
+   min-height: 9.375rem;
    padding: .5rem;
    border: var(--commonBorder);
    font-size: .875rem;
@@ -104,8 +104,9 @@
 
 .hero__cursor{
    display: grid;
-   grid-template-columns: repeat(4, 12.5rem);
+   grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
    gap: .9375rem;
+   justify-items: center;
 }
 
 .hero__cursor a:first-child{
