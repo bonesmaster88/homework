@@ -1,0 +1,169 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+.header,
+.platform-wrapper,
+.footer {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.header img {
+    width: 130px;
+    padding: 10px 5px 20px 15px;
+}
+
+.header p {
+    display: inline-block;
+}
+
+/* -- */
+
+.platform-wpapper {
+    padding: 112px 0;
+}
+
+.platform-text {
+    margin-bottom: 70px;
+}
+
+.platform-text p,
+.platform-text p + p,
+.block-content img + p {
+    font-weight: 700;
+}
+
+.platform-text p {
+    margin-bottom: 18px;
+    color: #5A54F2;
+
+    letter-spacing: 0.2px;
+}
+
+.platform-text span{
+    line-height: 24px;
+}
+
+.platform-text p + p,
+.platform-text p + p + p,
+.block-content img + p {
+    font-family: "Circular Std", sans-serif;
+    color: #000;
+}
+
+.platform-text p + p {
+    font-size: 36px;
+}
+
+.platform-text p + p + p {
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+/* -- */
+
+.platform-block {
+    overflow: clip;
+}
+
+.block-items {
+    /* margin-right: -30px; */
+    margin-left: -15px;
+    margin-right: -15px;
+    font-size: 0;
+}
+
+.item {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* padding-right: 30px; */
+}
+
+.item > div {
+    background-color: #c18686;
+}
+
+.item span {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background-color: #E74040;
+}
+
+.text {
+    padding-top: 48px;
+}
+
+.block-content {
+    padding: 35px 40px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.block-content img,
+.block-content p,
+.block-content span {
+    margin-bottom: 20px;
+}
+
+.block-content img {
+    width: 72px;
+    height: 72px;
+}
+
+.block-content img + p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+/* -- */
+
+.footer-top {
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-top a {
+    padding: 3px;
+}
+
+.footer p {
+    padding: 9px;
+    margin-bottom: 10px;
+}
+
+.one {
+    min-width: 200px;
+}
+
+.tow {
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.three {
+    max-width: 110px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.four span {
+    vertical-align: super;
+    font-size: 12px;
+}
