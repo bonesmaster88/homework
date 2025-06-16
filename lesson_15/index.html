@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 15</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="title title--center">
+                    <h1>Ecobazar</h1>
+                </div>
+
+            </div>
+        </header>
+        <main class="page">
+            <div class="featured">
+                <div class="featured__container">
+                    <h2 class="title title--link">Featured Products
+                        <a href="#" class="view-all-link">View All
+                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 7.00049H1" stroke="#00B307" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9.94995 0.975586L16 6.99959L9.94995 13.0246" stroke="#00B307"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </h2>
+                    <div class="featured__body">
+                        <div class="featured__row">
+                            <div class="featured__item-product item-product">
+                                <a class="item-product__img" href="#">
+                                    <img src="img/test.jpg" alt="">
+                                    <!-- <picture>
+                                        <source
+                                            srcset="img/products/green-apple-2x.webp 2x, img/products/green-apple-3x.webp.webp 3x"
+                                            type="image/webp">
+                                        <img src="img/products/green-apple.webp" alt="Green Apple">
+                                    </picture> -->
+                                </a>
+                                <div class="item-product__actions-group">
+                                    <button type="button" class="item-product__wishlist"><svg width="40" height="40"
+                                            viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2" />
+                                            <path
+                                                d="M19.9996 27.5451C3.33328 18.3333 14.9999 8.3333 19.9996 14.6567C24.9999 8.3333 36.6666 18.3333 19.9996 27.5451Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg></button>
+                                    <button type="button" class="item-product__quick-view"><svg width="40" height="40"
+                                            viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2" />
+                                            <path
+                                                d="M20 13.541C13.75 13.541 11.25 20.0001 11.25 20.0001C11.25 20.0001 13.75 26.4577 20 26.4577C26.25 26.4577 28.75 20.0001 28.75 20.0001C28.75 20.0001 26.25 13.541 20 13.541V13.541Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M20 23.125C20.8288 23.125 21.6237 22.7958 22.2097 22.2097C22.7958 21.6237 23.125 20.8288 23.125 20C23.125 19.1712 22.7958 18.3763 22.2097 17.7903C21.6237 17.2042 20.8288 16.875 20 16.875C19.1712 16.875 18.3763 17.2042 17.7903 17.7903C17.2042 18.3763 16.875 19.1712 16.875 20C16.875 20.8288 17.2042 21.6237 17.7903 22.2097C18.3763 22.7958 19.1712 23.125 20 23.125V23.125Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg></button>
+                                </div>
+                                <div class="item-product__inner">
+                                    <div class="item-product__content">
+                                        <h3 class="item-product__title"><a href="#">Green Apple</a>
+                                        </h3>
+
+                                        <div class="item-product__price item-product__price--old">
+                                            $14.99<span>$20.99</span>
+                                        </div>
+
+                                        <div class="item-product__rating-stars rating">
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="1 rating star"></span>
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="2 rating stars"></span>
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="3 rating stars"></span>
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="4 rating stars"></span>
+                                            <span class="rating__star"><img src="img/icons/star-gray.svg"
+                                                    alt="5 rating stars"></span>
+                                        </div>
+
+                                    </div>
+                                    <button type="button" class="item-product__cart"><svg width="40" height="41"
+                                            viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20.5" r="20" fill="#F2F2F2" />
+                                            <path
+                                                d="M16.6667 19.3333H14.1667L12.5 28.5H27.5L25.8333 19.3333H23.3333M16.6667 19.3333V16.8333C16.6667 14.9924 18.1591 13.5 20 13.5V13.5C21.8409 13.5 23.3333 14.9924 23.3333 16.8333V19.3333M16.6667 19.3333H23.3333M16.6667 19.3333V21.8333M23.3333 19.3333V21.8333"
+                                                stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg></button>
+                                </div>
+                                <div class="offer-icons">
+                                    <div class="sale-icon">Sale <span>50%</span></div>
+                                </div>
+
+                            </div>
+                            <div class="featured__item-product item-product">
+                                <a class="item-product__img" href="#">
+                                    <picture>
+                                        <source
+                                            srcset="img/products/fresh-indian-malta-2x.webp 2x, img/products/fresh-indian-malta-3x.webp 3x"
+                                            type="image/webp">
+                                        <img src="img/products/chinese-cabbage.webp" alt="Fresh Indian Malta">
+                                    </picture>
+                                </a>
+                                <div class="item-product__actions-group">
+                                    <button type="button" class="item-product__wishlist"><svg width="40" height="40"
+                                            viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2" />
+                                            <path
+                                                d="M19.9996 27.5451C3.33328 18.3333 14.9999 8.3333 19.9996 14.6567C24.9999 8.3333 36.6666 18.3333 19.9996 27.5451Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg></button>
+                                    <button type="button" class="item-product__quick-view"><svg width="40" height="40"
+                                            viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2" />
+                                            <path
+                                                d="M20 13.541C13.75 13.541 11.25 20.0001 11.25 20.0001C11.25 20.0001 13.75 26.4577 20 26.4577C26.25 26.4577 28.75 20.0001 28.75 20.0001C28.75 20.0001 26.25 13.541 20 13.541V13.541Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M20 23.125C20.8288 23.125 21.6237 22.7958 22.2097 22.2097C22.7958 21.6237 23.125 20.8288 23.125 20C23.125 19.1712 22.7958 18.3763 22.2097 17.7903C21.6237 17.2042 20.8288 16.875 20 16.875C19.1712 16.875 18.3763 17.2042 17.7903 17.7903C17.2042 18.3763 16.875 19.1712 16.875 20C16.875 20.8288 17.2042 21.6237 17.7903 22.2097C18.3763 22.7958 19.1712 23.125 20 23.125V23.125Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg></button>
+                                </div>
+
+                                <div class="item-product__inner">
+                                    <div class="item-product__content">
+                                        <h3 class="item-product__title"><a href="#">Fresh Indian</a>
+                                        </h3>
+
+                                        <div class="item-product__price">$14.99</div>
+
+                                        <div class="item-product__rating-stars rating">
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="1 rating star"></span>
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="2 rating stars"></span>
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="3 rating stars"></span>
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="4 rating stars"></span>
+                                            <span class="rating__star"><img src="img/icons/star-gray.svg"
+                                                    alt="5 rating stars"></span>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="item-product__cart"><svg width="40" height="41"
+                                            viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20.5" r="20" fill="#F2F2F2" />
+                                            <path
+                                                d="M16.6667 19.3333H14.1667L12.5 28.5H27.5L25.8333 19.3333H23.3333M16.6667 19.3333V16.8333C16.6667 14.9924 18.1591 13.5 20 13.5V13.5C21.8409 13.5 23.3333 14.9924 23.3333 16.8333V19.3333M16.6667 19.3333H23.3333M16.6667 19.3333V21.8333M23.3333 19.3333V21.8333"
+                                                stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg></button>
+                                </div>
+                            </div>
+                            <div class="featured__item-product item-product">
+                                <a class="item-product__img" href="#">
+                                    <picture>
+                                        <source
+                                            srcset="img/products/chinese-cabbage-2x.webp 2x, img/products/chinese-cabbage-3x.webp 3x"
+                                            type="image/webp">
+                                        <img src="img/products/chinese-cabbage.webp" alt="Chinese cabbage">
+                                    </picture>
+                                </a>
+                                <div class="item-product__actions-group">
+                                    <button type="button" class="item-product__wishlist"><svg width="40" height="40"
+                                            viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2" />
+                                            <path
+                                                d="M19.9996 27.5451C3.33328 18.3333 14.9999 8.3333 19.9996 14.6567C24.9999 8.3333 36.6666 18.3333 19.9996 27.5451Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg></button>
+                                    <button type="button" class="item-product__quick-view"><svg width="40" height="40"
+                                            viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2" />
+                                            <path
+                                                d="M20 13.541C13.75 13.541 11.25 20.0001 11.25 20.0001C11.25 20.0001 13.75 26.4577 20 26.4577C26.25 26.4577 28.75 20.0001 28.75 20.0001C28.75 20.0001 26.25 13.541 20 13.541V13.541Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M20 23.125C20.8288 23.125 21.6237 22.7958 22.2097 22.2097C22.7958 21.6237 23.125 20.8288 23.125 20C23.125 19.1712 22.7958 18.3763 22.2097 17.7903C21.6237 17.2042 20.8288 16.875 20 16.875C19.1712 16.875 18.3763 17.2042 17.7903 17.7903C17.2042 18.3763 16.875 19.1712 16.875 20C16.875 20.8288 17.2042 21.6237 17.7903 22.2097C18.3763 22.7958 19.1712 23.125 20 23.125V23.125Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg></button>
+                                </div>
+                                <div class="item-product__inner">
+                                    <div class="item-product__content">
+                                        <h3 class="item-product__title"><a href="#">Chinese cabbage</a>
+                                        </h3>
+
+                                        <div class="item-product__price">$14.99</div>
+
+                                        <div class="item-product__rating-stars rating">
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="1 rating star"></span>
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="2 rating stars"></span>
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="3 rating stars"></span>
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="4 rating stars"></span>
+                                            <span class="rating__star"><img src="img/icons/star-gray.svg"
+                                                    alt="5 rating stars"></span>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="item-product__cart"><svg width="40" height="41"
+                                            viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20.5" r="20" fill="#F2F2F2" />
+                                            <path
+                                                d="M16.6667 19.3333H14.1667L12.5 28.5H27.5L25.8333 19.3333H23.3333M16.6667 19.3333V16.8333C16.6667 14.9924 18.1591 13.5 20 13.5V13.5C21.8409 13.5 23.3333 14.9924 23.3333 16.8333V19.3333M16.6667 19.3333H23.3333M16.6667 19.3333V21.8333M23.3333 19.3333V21.8333"
+                                                stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg></button>
+                                </div>
+                            </div>
+                            <div class="featured__item-product item-product">
+                                <a class="item-product__img" href="#">
+                                    <picture>
+                                        <source
+                                            srcset="img/products/green-lettuce-2x.webp 2x, img/products/green-lettuce-3x.webp 3x"
+                                            type="image/webp">
+                                        <img src="img/products/green-lettuce.webp" alt="Green Lettuce">
+                                    </picture>
+                                </a>
+                                <div class="item-product__actions-group">
+                                    <button type="button" class="item-product__wishlist"><svg width="40" height="40"
+                                            viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2" />
+                                            <path
+                                                d="M19.9996 27.5451C3.33328 18.3333 14.9999 8.3333 19.9996 14.6567C24.9999 8.3333 36.6666 18.3333 19.9996 27.5451Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg></button>
+                                    <button type="button" class="item-product__quick-view"><svg width="40" height="40"
+                                            viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2" />
+                                            <path
+                                                d="M20 13.541C13.75 13.541 11.25 20.0001 11.25 20.0001C11.25 20.0001 13.75 26.4577 20 26.4577C26.25 26.4577 28.75 20.0001 28.75 20.0001C28.75 20.0001 26.25 13.541 20 13.541V13.541Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M20 23.125C20.8288 23.125 21.6237 22.7958 22.2097 22.2097C22.7958 21.6237 23.125 20.8288 23.125 20C23.125 19.1712 22.7958 18.3763 22.2097 17.7903C21.6237 17.2042 20.8288 16.875 20 16.875C19.1712 16.875 18.3763 17.2042 17.7903 17.7903C17.2042 18.3763 16.875 19.1712 16.875 20C16.875 20.8288 17.2042 21.6237 17.7903 22.2097C18.3763 22.7958 19.1712 23.125 20 23.125V23.125Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg></button>
+                                </div>
+                                <div class="item-product__inner">
+                                    <div class="item-product__content">
+                                        <h3 class="item-product__title"><a href="#">Green Lettuce</a>
+                                        </h3>
+
+                                        <div class="item-product__price">$14.99</div>
+
+                                        <div class="item-product__rating-stars rating">
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="1 rating star"></span>
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="2 rating stars"></span>
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="3 rating stars"></span>
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="4 rating stars"></span>
+                                            <span class="rating__star"><img src="img/icons/star-gray.svg"
+                                                    alt="5 rating stars"></span>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="item-product__cart"><svg width="40" height="41"
+                                            viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20.5" r="20" fill="#F2F2F2" />
+                                            <path
+                                                d="M16.6667 19.3333H14.1667L12.5 28.5H27.5L25.8333 19.3333H23.3333M16.6667 19.3333V16.8333C16.6667 14.9924 18.1591 13.5 20 13.5V13.5C21.8409 13.5 23.3333 14.9924 23.3333 16.8333V19.3333M16.6667 19.3333H23.3333M16.6667 19.3333V21.8333M23.3333 19.3333V21.8333"
+                                                stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg></button>
+                                </div>
+                            </div>
+                            <div class="featured__item-product item-product">
+                                <a class="item-product__img" href="#">
+                                    <picture>
+                                        <source
+                                            srcset="img/products/eggplant-2x.webp 2x, img/products/eggplant-3x.webp 3x"
+                                            type="image/webp">
+                                        <img src="img/products/eggplant.webp" alt="Eggplant">
+                                    </picture>
+                                </a>
+                                <div class="item-product__actions-group">
+                                    <button type="button" class="item-product__wishlist"><svg width="40" height="40"
+                                            viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2" />
+                                            <path
+                                                d="M19.9996 27.5451C3.33328 18.3333 14.9999 8.3333 19.9996 14.6567C24.9999 8.3333 36.6666 18.3333 19.9996 27.5451Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" />
+                                        </svg></button>
+                                    <button type="button" class="item-product__quick-view"><svg width="40" height="40"
+                                            viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2" />
+                                            <path
+                                                d="M20 13.541C13.75 13.541 11.25 20.0001 11.25 20.0001C11.25 20.0001 13.75 26.4577 20 26.4577C26.25 26.4577 28.75 20.0001 28.75 20.0001C28.75 20.0001 26.25 13.541 20 13.541V13.541Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M20 23.125C20.8288 23.125 21.6237 22.7958 22.2097 22.2097C22.7958 21.6237 23.125 20.8288 23.125 20C23.125 19.1712 22.7958 18.3763 22.2097 17.7903C21.6237 17.2042 20.8288 16.875 20 16.875C19.1712 16.875 18.3763 17.2042 17.7903 17.7903C17.2042 18.3763 16.875 19.1712 16.875 20C16.875 20.8288 17.2042 21.6237 17.7903 22.2097C18.3763 22.7958 19.1712 23.125 20 23.125V23.125Z"
+                                                stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg></button>
+                                </div>
+                                <div class="item-product__inner">
+                                    <div class="item-product__content">
+                                        <h3 class="item-product__title"><a href="#">Eggplant</a>
+                                        </h3>
+
+                                        <div class="item-product__price">$14.99</div>
+
+                                        <div class="item-product__rating-stars rating">
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="1 rating star"></span>
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="2 rating stars"></span>
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="3 rating stars"></span>
+                                            <span class="rating__star"><img src="img/icons/star-yellow.svg"
+                                                    alt="4 rating stars"></span>
+                                            <span class="rating__star"><img src="img/icons/star-gray.svg"
+                                                    alt="5 rating stars"></span>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="item-product__cart"><svg width="40" height="41"
+                                            viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20.5" r="20" fill="#F2F2F2" />
+                                            <path
+                                                d="M16.6667 19.3333H14.1667L12.5 28.5H27.5L25.8333 19.3333H23.3333M16.6667 19.3333V16.8333C16.6667 14.9924 18.1591 13.5 20 13.5V13.5C21.8409 13.5 23.3333 14.9924 23.3333 16.8333V19.3333M16.6667 19.3333H23.3333M16.6667 19.3333V21.8333M23.3333 19.3333V21.8333"
+                                                stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <div class="news__container">
+                    <h2 class="title title--center">Latest news</h2>
+                    <div class="news__body">
+                        <div class="news__row">
+                            <div class="news__item item-news">
+                                <a class="item-news__img" href="#">
+                                    <img src="img/a.jpg" alt="">
+                                    <!-- <picture>
+                                        <source srcset="img/news/news-img-1-2x.webp 2x, img/news/news-img-1-3x.webp 3x"
+                                            type="image/webp">
+                                        <img src="img/news/news-img-1.webp"
+                                            alt="Oranges are dropping into a bowl of water, causing small waves and splashes in the water.">
+                                    </picture> -->
+                                    <div class="date-icon">18<span>NOV</span></div>
+                                </a>
+                                <div class="item-news__content">
+                                    <div class="item-news__meta">
+                                        <div>
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.1583 11.6748L11.1833 17.6498C11.0285 17.8048 10.8447 17.9277 10.6424 18.0116C10.4401 18.0955 10.2232 18.1386 10.0042 18.1386C9.78513 18.1386 9.56825 18.0955 9.36592 18.0116C9.16359 17.9277 8.97978 17.8048 8.82499 17.6498L1.66666 10.4998V2.1665H9.99999L17.1583 9.32484C17.4687 9.63711 17.643 10.0595 17.643 10.4998C17.643 10.9401 17.4687 11.3626 17.1583 11.6748V11.6748Z"
+                                                    stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M5.83331 6.33301H5.84165" stroke="#B3B3B3" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+
+                                            <a href="#">Food</a>
+                                        </div>
+                                        <div>
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.99993 9.66667C11.8409 9.66667 13.3333 8.17428 13.3333 6.33333C13.3333 4.49238 11.8409 3 9.99993 3C8.15898 3 6.6666 4.49238 6.6666 6.33333C6.6666 8.17428 8.15898 9.66667 9.99993 9.66667Z"
+                                                    stroke="#B3B3B3" stroke-width="1.2" />
+                                                <path
+                                                    d="M12.4999 12.1665H7.49995C5.19828 12.1665 3.13745 14.2915 4.65161 16.024C5.68161 17.2023 7.38495 17.9998 9.99995 17.9998C12.6149 17.9998 14.3174 17.2023 15.3474 16.024C16.8624 14.2907 14.8008 12.1665 12.4999 12.1665Z"
+                                                    stroke="#B3B3B3" stroke-width="1.2" />
+                                            </svg>
+                                            <a href="#">By Admin</a>
+                                        </div>
+                                        <div>
+                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.5238 14.2728L9.48206 16.0087C9.43209 16.092 9.36139 16.1609 9.27687 16.2088C9.19234 16.2566 9.09686 16.2818 8.99972 16.2818C8.90258 16.2818 8.8071 16.2566 8.72257 16.2088C8.63804 16.1609 8.56735 16.092 8.51738 16.0087L7.47675 14.2728C7.42671 14.1895 7.35596 14.1206 7.27138 14.0728C7.1868 14.025 7.09128 13.9999 6.99413 14H2.8125C2.66332 14 2.52024 13.9407 2.41475 13.8352C2.30926 13.7298 2.25 13.5867 2.25 13.4375V4.4375C2.25 4.28832 2.30926 4.14524 2.41475 4.03975C2.52024 3.93426 2.66332 3.875 2.8125 3.875H15.1875C15.3367 3.875 15.4798 3.93426 15.5852 4.03975C15.6907 4.14524 15.75 4.28832 15.75 4.4375V13.4375C15.75 13.5867 15.6907 13.7298 15.5852 13.8352C15.4798 13.9407 15.3367 14 15.1875 14H11.0059C10.9088 14 10.8134 14.0252 10.7289 14.073C10.6445 14.1208 10.5738 14.1896 10.5238 14.2728V14.2728Z"
+                                                    stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+
+                                            <a href="#">65 Comments</a>
+                                        </div>
+                                    </div>
+                                    <h3 class="item-news__title">Curabitur porttitor orci eget neque
+                                            accumsan venenatis. Nunc fermentum.</h3>
+
+                                    <a href="#" class="read-more-link">Read More
+                                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16 7.00049H1" stroke="#00B307" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.94995 0.975586L16 6.99959L9.94995 13.0246" stroke="#00B307"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+
+                                </div>
+
+
+                            </div>
+                            <div class="news__item item-news">
+                                <a class="item-news__img" href="#">
+                                    <picture>
+                                        <source srcset="img/news/news-img-2-2x.webp 2x, img/news/news-img-2-3x.webp 3x"
+                                            type="image/webp">
+                                        <img src="img/news/news-img-2.webp"
+                                            alt="A plate featuring a sunny-side-up egg, sliced avocado, and fresh spinach leaves arranged artfully.">
+                                    </picture>
+                                    <div class="date-icon">29<span>JAN</span></div>
+                                </a>
+                                <div class="item-news__content">
+                                    <div class="item-news__meta">
+                                        <div>
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.1583 11.6748L11.1833 17.6498C11.0285 17.8048 10.8447 17.9277 10.6424 18.0116C10.4401 18.0955 10.2232 18.1386 10.0042 18.1386C9.78513 18.1386 9.56825 18.0955 9.36592 18.0116C9.16359 17.9277 8.97978 17.8048 8.82499 17.6498L1.66666 10.4998V2.1665H9.99999L17.1583 9.32484C17.4687 9.63711 17.643 10.0595 17.643 10.4998C17.643 10.9401 17.4687 11.3626 17.1583 11.6748V11.6748Z"
+                                                    stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M5.83331 6.33301H5.84165" stroke="#B3B3B3" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+
+                                            <a href="#">Food</a>
+                                        </div>
+                                        <div>
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.99993 9.66667C11.8409 9.66667 13.3333 8.17428 13.3333 6.33333C13.3333 4.49238 11.8409 3 9.99993 3C8.15898 3 6.6666 4.49238 6.6666 6.33333C6.6666 8.17428 8.15898 9.66667 9.99993 9.66667Z"
+                                                    stroke="#B3B3B3" stroke-width="1.2" />
+                                                <path
+                                                    d="M12.4999 12.1665H7.49995C5.19828 12.1665 3.13745 14.2915 4.65161 16.024C5.68161 17.2023 7.38495 17.9998 9.99995 17.9998C12.6149 17.9998 14.3174 17.2023 15.3474 16.024C16.8624 14.2907 14.8008 12.1665 12.4999 12.1665Z"
+                                                    stroke="#B3B3B3" stroke-width="1.2" />
+                                            </svg>
+                                            <a href="#">By Admin</a>
+                                        </div>
+                                        <div>
+                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.5238 14.2728L9.48206 16.0087C9.43209 16.092 9.36139 16.1609 9.27687 16.2088C9.19234 16.2566 9.09686 16.2818 8.99972 16.2818C8.90258 16.2818 8.8071 16.2566 8.72257 16.2088C8.63804 16.1609 8.56735 16.092 8.51738 16.0087L7.47675 14.2728C7.42671 14.1895 7.35596 14.1206 7.27138 14.0728C7.1868 14.025 7.09128 13.9999 6.99413 14H2.8125C2.66332 14 2.52024 13.9407 2.41475 13.8352C2.30926 13.7298 2.25 13.5867 2.25 13.4375V4.4375C2.25 4.28832 2.30926 4.14524 2.41475 4.03975C2.52024 3.93426 2.66332 3.875 2.8125 3.875H15.1875C15.3367 3.875 15.4798 3.93426 15.5852 4.03975C15.6907 4.14524 15.75 4.28832 15.75 4.4375V13.4375C15.75 13.5867 15.6907 13.7298 15.5852 13.8352C15.4798 13.9407 15.3367 14 15.1875 14H11.0059C10.9088 14 10.8134 14.0252 10.7289 14.073C10.6445 14.1208 10.5738 14.1896 10.5238 14.2728V14.2728Z"
+                                                    stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+
+                                            <a href="#">65 Comments</a>
+                                        </div>
+                                    </div>
+                                    <h3 class="item-news__title">Eget lobortis lorem lacinia. Vivamus
+                                            pharetra semper.</h3>
+
+                                    <a href="#" class="read-more-link">Read More
+                                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16 7.00049H1" stroke="#00B307" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.94995 0.975586L16 6.99959L9.94995 13.0246" stroke="#00B307"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+
+                                </div>
+
+
+                            </div>
+                            <div class="news__item item-news">
+                                <a class="item-news__img" href="#">
+                                    <picture>
+                                        <source srcset="img/news/news-img-3-3x.webp 2x, img/news/news-img-3-3x.webp 3x"
+                                            type="image/webp">
+                                        <img src="img/news/news-img-3.webp"
+                                            alt="A bowl filled with colorful vegetables and fruits sits on a rustic wooden table.">
+                                    </picture>
+                                    <div class="date-icon">21<span>FEB</span></div>
+                                </a>
+                                <div class="item-news__content">
+                                    <div class="item-news__meta">
+                                        <div>
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.1583 11.6748L11.1833 17.6498C11.0285 17.8048 10.8447 17.9277 10.6424 18.0116C10.4401 18.0955 10.2232 18.1386 10.0042 18.1386C9.78513 18.1386 9.56825 18.0955 9.36592 18.0116C9.16359 17.9277 8.97978 17.8048 8.82499 17.6498L1.66666 10.4998V2.1665H9.99999L17.1583 9.32484C17.4687 9.63711 17.643 10.0595 17.643 10.4998C17.643 10.9401 17.4687 11.3626 17.1583 11.6748V11.6748Z"
+                                                    stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M5.83331 6.33301H5.84165" stroke="#B3B3B3" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+
+                                            <a href="#">Food</a>
+                                        </div>
+                                        <div>
+                                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.99993 9.66667C11.8409 9.66667 13.3333 8.17428 13.3333 6.33333C13.3333 4.49238 11.8409 3 9.99993 3C8.15898 3 6.6666 4.49238 6.6666 6.33333C6.6666 8.17428 8.15898 9.66667 9.99993 9.66667Z"
+                                                    stroke="#B3B3B3" stroke-width="1.2" />
+                                                <path
+                                                    d="M12.4999 12.1665H7.49995C5.19828 12.1665 3.13745 14.2915 4.65161 16.024C5.68161 17.2023 7.38495 17.9998 9.99995 17.9998C12.6149 17.9998 14.3174 17.2023 15.3474 16.024C16.8624 14.2907 14.8008 12.1665 12.4999 12.1665Z"
+                                                    stroke="#B3B3B3" stroke-width="1.2" />
+                                            </svg>
+                                            <a href="#">By Admin</a>
+                                        </div>
+                                        <div>
+                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10.5238 14.2728L9.48206 16.0087C9.43209 16.092 9.36139 16.1609 9.27687 16.2088C9.19234 16.2566 9.09686 16.2818 8.99972 16.2818C8.90258 16.2818 8.8071 16.2566 8.72257 16.2088C8.63804 16.1609 8.56735 16.092 8.51738 16.0087L7.47675 14.2728C7.42671 14.1895 7.35596 14.1206 7.27138 14.0728C7.1868 14.025 7.09128 13.9999 6.99413 14H2.8125C2.66332 14 2.52024 13.9407 2.41475 13.8352C2.30926 13.7298 2.25 13.5867 2.25 13.4375V4.4375C2.25 4.28832 2.30926 4.14524 2.41475 4.03975C2.52024 3.93426 2.66332 3.875 2.8125 3.875H15.1875C15.3367 3.875 15.4798 3.93426 15.5852 4.03975C15.6907 4.14524 15.75 4.28832 15.75 4.4375V13.4375C15.75 13.5867 15.6907 13.7298 15.5852 13.8352C15.4798 13.9407 15.3367 14 15.1875 14H11.0059C10.9088 14 10.8134 14.0252 10.7289 14.073C10.6445 14.1208 10.5738 14.1896 10.5238 14.2728V14.2728Z"
+                                                    stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+
+                                            <a href="#">65 Comments</a>
+                                        </div>
+                                    </div>
+                                    <h3 class="item-news__title">Maecenas blandit risus elementum mauris
+                                            malesuada.</h3>
+
+                                    <a href="#" class="read-more-link">Read More
+                                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16 7.00049H1" stroke="#00B307" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M9.94995 0.975586L16 6.99959L9.94995 13.0246" stroke="#00B307"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                &#169; 2025
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
