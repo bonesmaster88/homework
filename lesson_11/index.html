@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:regular,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 11</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <h1>Lesson 11<br><strong>Transform</strong></h1>
+        </header>
+        <main class="page">
+            <div class="composition">
+                <div class="composition__container">
+                    <div class="composition__mark mark">
+                        <div class="mark__body">
+                            <div class="mark__frame"></div>
+                            <div class="mark__pole"></div>
+                            <div class="mark__no-parking"></div>
+                            <div class="mark__no-parking-icon"></div>
+                            <div class="mark__text">NO<br>PARKING</div>
+                        </div>
+                    </div>
+                    <div class="composition__towed-element towed-element">
+                        <div class="towed-element__body">
+                            <div class="towed-element__frame"></div>
+                            <div class="towed-element__top"></div>
+                            <div class="towed-element__middle"></div>
+                            <div class="towed-element__middle2"></div>
+                            <div class="towed-element__bottom"></div>
+                            <div class="towed-element__bottom2"></div>
+                            <div class="towed-element__bottom3"></div>
+                            <div class="towed-element__bottom4"></div>
+                            <div class="towed-element__bottom-line"></div>
+                            <div class="towed-element__bottom-line2"></div>
+                            <div class="towed-element__headline"></div>
+                            <div class="towed-element__headline2"></div>
+                            <div class="towed-element__headline3"></div>
+                        </div>
+
+                    </div>
+                    <div class="composition__towed-element towed-element towed-element--small">
+                        <div class="towed-element__body">
+                            <div class="towed-element__frame"></div>
+                            <div class="towed-element__top"></div>
+                            <div class="towed-element__middle"></div>
+                            <div class="towed-element__middle2"></div>
+                            <div class="towed-element__bottom"></div>
+                            <div class="towed-element__bottom2"></div>
+                            <div class="towed-element__bottom3"></div>
+                            <div class="towed-element__bottom4"></div>
+                            <div class="towed-element__bottom-line"></div>
+                            <div class="towed-element__bottom-line2"></div>
+                            <div class="towed-element__headline"></div>
+                            <div class="towed-element__headline2"></div>
+                            <div class="towed-element__headline3"></div>
+                        </div>
+
+                    </div>
+                    <div class="composition__tow-truck tow-truck">
+                        <div class="tow-truck__body">
+                            <div class="tow-truck__frame"></div>
+                            <div class="tow-truck__headlight"></div>
+                            <div class="tow-truck__strobe-light strobe-light">
+                                <div class="strobe-light__rect1"></div>
+                                <div class="strobe-light__rect2"></div>
+                            </div>
+                            <div class="tow-truck__rect1"></div>
+                            <div class="tow-truck__rect2"></div>
+                            <div class="tow-truck__rect3"></div>
+                            <div class="tow-truck__window"></div>
+                            <div class="tow-truck__line1"></div>
+                            <div class="tow-truck__line2"></div>
+                            <div class="tow-truck__line3"></div>
+                            <div class="tow-truck__rect-bottom"></div>
+                            <div class="tow-truck__half-above-wheel"></div>
+                            <div class="tow-truck__wheels wheels">
+                                <div class="wheel"></div>
+                                <div class="wheel"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="composition__boat boat">
+                        <div class="boat__body">
+                            <div class="boat__frame"></div>
+                            <div class="boat__hull hull">
+                                <div class="hull__rect1"></div>
+                                <div class="hull__rect2"></div>
+                                <div class="hull__rect3"></div>
+                                <div class="hull__windows">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="boat__cabin cabin">
+                                <div class="cabin__oval"></div>
+                                <div class="cabin__rect"></div>
+                                <div class="cabin__window-rect1"></div>
+                                <div class="cabin__window-rect2"></div>
+                                <div class="cabin__window-glare"></div>
+                                <div class="cabin__window-glare2"></div>
+                            </div>
+                            <div class="boat__rigging rigging">
+                                <div class="rigging__ropes rope">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="rigging__mast"></div>
+                                <div class="rigging__sails sail">
+                                    <div class="sail__origin"></div>
+                                    <div class="sail__curved"></div>
+                                </div>
+                            </div>
+                            <div class="boat__rail rail">
+                                <div class="rail__stanchions">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="rail__lifelines">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="rail__fenders fenders">
+                                    <div class="fenders__item fender">
+                                        <div class="fender__line"></div>
+                                        <div class="fender__lock"></div>
+                                        <div class="fender__top"></div>
+                                        <div class="fender__circle"></div>
+                                    </div>
+                                    <div class="fenders__item fender fender--right">
+                                        <div class="fender__line"></div>
+                                        <div class="fender__lock"></div>
+                                        <div class="fender__top"></div>
+                                        <div class="fender__circle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="practice">
+                <div class="practice__container">
+                    <h2><span>translate</span></h2>
+                    <div class="practice__cards">
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--translate-x">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>translateX</strong>(30px);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--translate-x2">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>translateX</strong>(-30px);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--translate-y">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>translateY</strong>(30px);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--translate-y2">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>translateY</strong>(-30px);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--translate-xy">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>translate</strong>(30px, 30px);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--translate-xy2">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>translate</strong>(-30px, 30px);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--translate-xy3">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>translate</strong>(30px, 30px);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2><span>rotate</span></h2>
+                    <div class="practice__cards">
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-x">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>rotateX</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-x2">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: top center;</p>
+                                <p> transform: <strong>rotateX</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-x3">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: bottom center;</p>
+                                <p> transform: <strong>rotateX</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="practice__cards">
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area figure__area--3d">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-x">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p> transform-style: <strong>preserve-3d</strong>;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>rotateX</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area  figure__area--3d">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-x2">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p> transform-style: <strong>preserve-3d</strong>;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: top center;</p>
+                                <p> transform: <strong>rotateX</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area figure__area--3d">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-x3">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p> transform-style: <strong>preserve-3d</strong>;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: bottom center;</p>
+                                <p> transform: <strong>rotateX</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area figure__area--3d-2">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-x">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>rotateX</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="practice__cards">
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area figure__area--3d">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-xm">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p> transform-style: <strong>preserve-3d</strong>;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>rotateX</strong>(-40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area  figure__area--3d">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-x2m">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p> transform-style: <strong>preserve-3d</strong>;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: top center;</p>
+                                <p> transform: <strong>rotateX</strong>(-40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area figure__area--3d">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-x3m">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p> transform-style: <strong>preserve-3d</strong>;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: bottom center;</p>
+                                <p> transform: <strong>rotateX</strong>(-40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area figure__area--3d-left">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-xm">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p>perspective-origin: left;</p>
+                                <p> transform-style: <strong>preserve-3d</strong>;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>rotateX</strong>(-40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="practice__cards">
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-y">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>rotateY</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-y2">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: top left;</p>
+                                <p> transform: <strong>rotateY</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-y3">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: bottom right;</p>
+                                <p> transform: <strong>rotateY</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="practice__cards">
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area figure__area--3d">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-y">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p> transform-style: <strong>preserve-3d</strong>;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>rotateY</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area  figure__area--3d">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-y2">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p> transform-style: <strong>preserve-3d</strong>;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: top left;</p>
+                                <p> transform: <strong>rotateY</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area figure__area--3d">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-y3">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p> transform-style: <strong>preserve-3d</strong>;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: bottom right;</p>
+                                <p> transform: <strong>rotateY</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area figure__area--3d-left">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-y">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p>perspective-origin: left;</p>
+                                <p> transform-style: <strong>preserve-3d</strong>;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>rotateY</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="practice__cards">
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area figure__area--3d">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-ym">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p> transform-style: <strong>preserve-3d</strong>;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>rotateY</strong>(-40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area  figure__area--3d">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-y2m">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p> transform-style: <strong>preserve-3d</strong>;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: top left;</p>
+                                <p> transform: <strong>rotateY</strong>(-40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area figure__area--3d">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-y3m">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p> transform-style: <strong>preserve-3d</strong>;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: bottom right;</p>
+                                <p> transform: <strong>rotateY</strong>(-40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="practice__cards">
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-xy">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>rotate</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-xy2">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: top center;</p>
+                                <p> transform: <strong>rotate</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-xy3">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: top left;</p>
+                                <p> transform: <strong>rotateY</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-xy4">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: top right;</p>
+                                <p> transform: <strong>rotateY</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="practice__cards">
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-xy5">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: bottom center;</p>
+                                <p> transform: <strong>rotate</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-xy6">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: bottom left;</p>
+                                <p> transform: <strong>rotate</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-xy7">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: bottom right;</p>
+                                <p> transform: <strong>rotate</strong>(40deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                        <div class="practice__card card">
+                            <div class="card__figure figure ">
+                                <div class="figure__area figure__area--3d">
+                                    <div class="figure__spin-element spin-element spin-element--rotate-3d">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p> transform-style: <strong>preserve-3d</strong>;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>rotate</strong>(1, 1, .5, 40deg);</p>
+                                <p>}</p>
+                                <p>***You can see the rotation effect<br> if a transition is applied.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h2><span>scale</span></h2>
+
+                    <div class="practice__cards">
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--scale">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>scale</strong>(1.5);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--scale2">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>scale</strong>(.5);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--scale-x">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>scaleX</strong>(1.5);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--scale-x2">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>scaleX</strong>(.5);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--scale-y">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>scaleY</strong>(.5);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--scale-y2">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>scaleY</strong>(.5);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2><span>skew</span></h2>
+                    <div class="practice__cards">
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--skew-x">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>skewX</strong>(20deg);</p>
+                                <p>}</p>
+                            </div>
+
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--skew-x2">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: top;</p>
+                                <p> transform: <strong>skewX</strong>(20deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--skew-x3">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: bottom;</p>
+                                <p> transform: <strong>skewX</strong>(20deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--skew-y">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>skewY</strong>(20deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--skew-y2">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: left;</p>
+                                <p> transform: <strong>skewY</strong>(20deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--skew-y3">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>skewY</strong>(20deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--skew-xy">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform: <strong>skew</strong>(-20deg, -10deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--skew-xy2">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p>transform-origin: top right;</p>
+                                <p> transform: <strong>skew</strong>(-40deg, -20deg);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2><span>mix</span></h2>
+                    <div class="practice__cards practice__cards--mix">
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--mix">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform:<br> rotate(-31deg)<br> translate(45px, 27px)<br> scale(1.21)<br>
+                                    skew(18deg, 45deg);</p>
+                                <p>}</p>
+                            </div>
+
+                        </div>
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area figure__area--3d">
+                                    <div class="figure__spin-element spin-element spin-element--mix2">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p>transform: rotateY(20deg) rotateX(10deg) scale(1.1);</p>
+                                <p>transform-style: preserve-3d;</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area">
+                                    <div class="figure__spin-element spin-element spin-element--mix3">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block__item </span>{</p>
+                                <p> transform:<br> scale(0.9)<br> rotate(-5deg)<br> translateZ(-20px);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                        <div class="practice__card card">
+                            <div class="card__figure figure">
+                                <div class="figure__area figure__area--3d-2">
+                                    <div class="figure__spin-element spin-element spin-element--mix4">
+                                        <div class="spin-element__axis-y">y</div>
+                                        <div class="spin-element__axis-x">x</div>
+                                        <p>🚩🚩🚩🚩🚩🚩</p>
+                                        <!-- Transform block -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__content">
+                                <p><span>.block </span>{</p>
+                                <p> perspective: 300px;</p>
+                                <p>}</p>
+                                <p><span>.block__item </span>{</p>
+                                <p>transform: <br>rotateX(70deg)<br> rotateZ(53deg)<br> scale(2);</p>
+                                <p>}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="practice__backface backface">
+                        <div class="backface__inner">
+                            <div class="backface__front">FRONT</div>
+                            <div class="backface__back">BACK</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <p>&#169; 2025</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
