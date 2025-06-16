@@ -1,0 +1,1182 @@
+@import url("reset.css");
+
+body {
+   font-family: "Roboto", sans-serif;
+   line-height: 1.5;
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+}
+
+[class *="__container"] {
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 0 15px;
+
+}
+
+.wrapper>*:not(:last-child),
+.page>*:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+.header,
+.footer {
+   padding: 10px;
+   text-align: center;
+}
+
+h1 strong {
+   font-size: 20px;
+}
+
+.pic__container img {
+   position: absolute;
+   top: 150px;
+   left: 550px;
+   z-index: 2;
+}
+
+.composition__container {
+   position: relative;
+   overflow: clip;
+   max-width: 1300px;
+   height: 700px;
+   background: url('../img/ocean.webp') no-repeat;
+   background-size: cover;
+   box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+   border-radius: 20px;
+}
+
+.composition__mark,
+.mark__body>div:not(:first-child),
+.composition__towed-element,
+.towed-element__body>div:not(:first-child),
+.composition__tow-truck,
+.tow-truck__body>div:not(:first-child),
+.composition__boat,
+.composition__boat>div:not(:first-child) {
+   position: absolute;
+}
+
+.mark__body,
+.towed-element__body,
+.tow-truck__body,
+.boat__body {
+   position: relative;
+}
+
+/* ----- */
+
+.composition__mark {
+   left: 790px;
+   top: 235px;
+   perspective: 500px;
+   z-index: 2;
+}
+
+.mark__body {
+   transform: rotateY(40deg) scale(.7);
+}
+
+.mark__frame {
+   top: 0;
+   width: 130px;
+   height: 320px;
+}
+
+.mark__no-parking {
+   top: 0;
+   width: 100%;
+   height: 170px;
+   border-radius: 10px;
+   background-color: #ec1c2e;
+}
+
+.mark__text {
+   top: 10px;
+   left: 24px;
+   text-align: center;
+   font-size: 20px;
+   font-weight: 500;
+   color: #fff;
+}
+
+.mark__no-parking::before {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   content: '';
+   width: 90%;
+   height: 160px;
+   border: 3px solid #fff;
+   border-radius: 10px;
+   background-color: #ec1c2e;
+   transform: translate(-50%, -50%);
+}
+
+.mark__no-parking-icon {
+   top: 85px;
+   left: 20px;
+   width: 70%;
+   height: 70px;
+   border-radius: 50%;
+   border: 3px solid #fff;
+}
+
+.mark__no-parking-icon::after {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   content: '';
+   width: 80%;
+   height: 50px;
+   border-radius: 50%;
+   background-color: #fff;
+   transform: translate(-50%, -50%);
+}
+
+.mark__pole {
+   bottom: 0;
+   left: 60px;
+   height: 100%;
+   width: 7px;
+   background-color: #000;
+}
+
+.mark__text {
+   animation: mark-text 1s 2 alternate 16s;
+}
+
+/* -----towed element----- */
+
+.composition__towed-element {
+   top: 462px;
+   left: 950px;
+   z-index: 2;
+   transform: rotate(10deg) scale(1.2);
+}
+
+.towed-element__frame {
+   width: 200px;
+   height: 105px;
+}
+
+.towed-element:not(.towed-element--small) {
+   animation:
+      towed-element-arrival 15s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+      towed-element-loading 3s cubic-bezier(0.42, 0, 0.58, 1) 26s forwards,
+      towed-element-carry 2.6s linear 29s forwards,
+      towed-element-move 6s linear 33s forwards;
+}
+
+.towed-element__top {
+   top: 0;
+   left: 60px;
+   width: 80px;
+   height: 45px;
+   background-color: rgba(174, 215, 242, 0.21);
+   border-radius: 100px 100px 15px 15px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+   border: 1px solid rgba(174, 215, 242, 0.3);
+   background: url('../img/alien.webp') center 5px no-repeat;
+   background-size: 22px;
+}
+
+.towed-element__top::before {
+   position: absolute;
+   left: -1px;
+   bottom: -5px;
+   content: '';
+   width: 80px;
+   height: 10px;
+   background-color: #acadb1;
+   border-radius: 49% 51% 49% 51% / 0% 0% 100% 100%;
+}
+
+.towed-element__middle,
+.towed-element__middle2,
+.towed-element__bottom,
+.towed-element__bottom2,
+.towed-element__bottom3 {
+   background-color: #828387;
+}
+
+.towed-element__middle {
+   top: 46px;
+   left: 23px;
+   width: 70px;
+   height: 30px;
+   border-bottom-left-radius: 20%;
+   transform: skew(-70deg);
+}
+
+.towed-element__middle2 {
+   left: 110px;
+   top: 46px;
+   width: 70px;
+   height: 30px;
+   border-bottom-right-radius: 20%;
+   transform: skew(70deg);
+}
+
+.towed-element__bottom,
+.towed-element__bottom2 {
+   top: 74px;
+   width: 70px;
+   height: 30px;
+   border-radius: 35px 35px 90px 90px;
+}
+
+.towed-element__bottom {
+   left: 48px;
+   transform: skew(77deg);
+}
+
+.towed-element__bottom2 {
+   left: 84px;
+   transform: skew(-77deg);
+}
+
+.towed-element__bottom3 {
+   top: 56px;
+   left: 32px;
+   width: 134px;
+   height: 29px;
+   border-radius: 10px 10px 30px 30px;
+}
+
+.towed-element__bottom4 {
+   top: 85px;
+   left: 28px;
+   width: 147px;
+   height: 18px;
+   background-color: #525254;
+   border-radius: 53% 46% 42% 53% / 0% 0% 100% 100%;
+}
+
+.towed-element__headline,
+.towed-element__headline2,
+.towed-element__headline3 {
+   width: 10px;
+   height: 7px;
+   border-radius: 51% 49% 48% 52% / 0% 0% 100% 100%;
+   background-color: #a11806;
+   box-shadow: #FFF 0 -1px 4px, #a11806 0 -2px 10px,
+      #ff8000 0 -10px 20px, #ff0 0 -18px 40px, 18px -29px 0px 9px rgba(0, 0, 0, 0);
+
+}
+
+.towed-element__headline {
+   bottom: -2px;
+   left: 98px;
+}
+
+.towed-element__headline2 {
+   left: 32px;
+   bottom: 5px;
+   transform: rotate(19deg);
+}
+
+.towed-element__headline3 {
+   bottom: 5px;
+   left: 163px;
+   transform: rotate(-24deg);
+}
+
+.towed-element__headline,
+.towed-element__headline2,
+.towed-element__headline3 {
+   animation: towed-element-headline 15s ease-in-out;
+}
+
+/* ----- */
+
+.towed-element--small {
+   top: 313px;
+   left: 755px;
+   transform: rotateY(0deg);
+   perspective: 300px;
+}
+
+.towed-element--small .towed-element__body {
+   transform: rotateY(40deg) scale(0.2);
+}
+
+/* -----tow-truck----- */
+
+.composition__tow-truck {
+   top: 470px;
+   left: 620px;
+}
+
+.tow-truck__frame {
+   width: 620px;
+   height: 190px;
+}
+
+/* ----- */
+
+.tow-truck__headlight {
+   top: 110px;
+   width: 25px;
+   height: 15px;
+   border-radius: 40% 100% 100% 40%;
+   background-color: #fff;
+   box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   transform: rotate(-10deg);
+}
+
+/* -----strobe-light----- */
+
+.tow-truck__strobe-light {
+   top: -23px;
+   left: 130px;
+}
+
+.strobe-light__rect1 {
+   margin-left: 4.5px;
+   width: 15px;
+   height: 13px;
+   border-radius: 10px 10px 0 0;
+   background: linear-gradient(90deg,
+         #ff0000,
+         #ff4f4f,
+         #ff9900);
+}
+
+.strobe-light__rect1 {
+   animation: tow-truck__strobe-light 1.5s linear infinite;
+}
+
+.strobe-light__rect2 {
+   width: 25px;
+   height: 10px;
+   background-color: #5b5b5b;
+}
+
+/* -----tow-truck----- */
+
+.tow-truck__body {
+   opacity: 0;
+   visibility: hidden;
+   z-index: 2;
+   animation: tow-truck-move-first 6s linear 17s forwards,
+      tow-truck-move-second 6s linear 33s forwards;
+}
+
+.tow-truck__rect1,
+.tow-truck__rect2,
+.tow-truck__rect3 {
+   background-color: #fec56b;
+}
+
+.tow-truck__rect1 {
+   top: 90px;
+   left: 0px;
+   width: 210px;
+   height: 70px;
+   border-radius: 30% 42% 0% 36% / 100% 12% 73% 100%;
+}
+
+.tow-truck__rect2 {
+   top: -3px;
+   left: 71px;
+   height: 120px;
+   width: 80px;
+   border-top-left-radius: 40px;
+   transform: rotate(20deg);
+}
+
+.tow-truck__rect3 {
+   top: 0;
+   left: 98px;
+   height: 141px;
+   width: 80px;
+   border-top-left-radius: 7px;
+}
+
+.tow-truck__window {
+   top: 20px;
+   left: 95px;
+   height: 65px;
+   width: 70px;
+   border-radius: 100% 23% 11% 0% / 100% 37% 73% 53%;
+   background-color: rgba(174, 215, 242, 0.9);
+   box-shadow: inset 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.tow-truck__line1,
+.tow-truck__line2,
+.tow-truck__line3 {
+   background-color: #000;
+}
+
+.tow-truck__line1,
+.tow-truck__line2 {
+   top: 72px;
+   width: 5px;
+   height: 78px;
+}
+
+.tow-truck__line1 {
+   left: 240px;
+}
+
+.tow-truck__line2 {
+   left: 290px;
+}
+
+.tow-truck__line3 {
+   top: 70px;
+   left: 220px;
+   width: 200px;
+   height: 8px;
+}
+
+.tow-truck__line1 {
+   animation: tow-truck__line1 3s linear 23s forwards,
+      tow-truck__line1-return linear 3s 29s forwards;
+}
+
+.tow-truck__line2 {
+   animation: tow-truck__line2 3s linear 23s forwards,
+      tow-truck__line2-return 3s 29s linear forwards;
+}
+
+.tow-truck__line3 {
+   animation: tow-truck__line3 3s linear 23s forwards,
+      tow-truck__line3-return 3s 29s linear forwards;
+}
+
+
+.tow-truck__rect-bottom {
+   top: 140px;
+   left: 0;
+   width: 380px;
+   height: 20px;
+   background-color: #465058;
+}
+
+/* ----- wheels----- */
+
+.tow-truck__half-above-wheel {
+   top: 121px;
+   left: 10px;
+   width: 80px;
+   height: 40px;
+   border: 3px solid #000;
+   background-color: #060709;
+   border-bottom: 3px solid transparent;
+   border-radius: 80px 80px 0 0;
+}
+
+.tow-truck__wheels {
+   top: 130px;
+}
+
+.wheel {
+   position: absolute;
+   width: 60px;
+   height: 60px;
+   z-index: 2;
+   border-radius: 50%;
+   background-color: #323943;
+   border: 10px dashed #000
+}
+
+.wheel:first-child {
+   left: 20px;
+}
+
+.wheel:last-child {
+   left: 290px;
+}
+
+.wheel::before {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   content: '';
+   width: 30px;
+   height: 30px;
+   border: 3px solid #000;
+   border-radius: 50%;
+   background-color: #fff;
+   transform: translate(-50%, -50%);
+}
+
+.wheel::after {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   content: '';
+   width: 15px;
+   height: 15px;
+   border: 3px solid #000;
+   border-radius: 50%;
+   background-color: #323943;
+   transform: translate(-50%, -50%);
+}
+
+.wheel {
+   animation: tow-truck-wheels-rotate-first 6s linear 17s,
+      tow-truck-wheels-rotate-second 6s linear 33s;
+}
+
+
+/* -----boat----- */
+
+.composition__boat {
+   top: 120px;
+   left: 50px;
+   transform: scale(.7);
+   animation: boat-move 50s linear infinite alternate;
+}
+
+.boat__body {
+   animation: boat-wave 1s linear infinite alternate;
+}
+
+.boat__frame {
+   width: 500px;
+   height: 250px;
+}
+
+/* -----hull----- */
+
+.hull__rect1,
+.hull__rect2,
+.hull__rect3 {
+   position: absolute;
+   background-color: #007dfe;
+}
+
+.hull__rect1 {
+   bottom: -7px;
+   left: 2px;
+   width: 509px;
+   height: 85px;
+   border-bottom: 10px solid #0055ba;
+   border-radius: 51% 49% 49% 51% / 0% 0% 100% 100%;
+}
+
+.hull__rect2 {
+   bottom: 52px;
+   left: -20px;
+   width: 330px;
+   height: 80px;
+   border-bottom-left-radius: 20%;
+   border-top: 25px solid #7fb3fc;
+   transform: skew(40deg);
+}
+
+.hull__rect3 {
+   bottom: 52px;
+   left: 200px;
+   content: '';
+   width: 330px;
+   height: 80px;
+   border-bottom-right-radius: 20%;
+   border-top: 25px solid #7fb3fc;
+   transform: skew(-40deg);
+}
+
+.hull__rect2::after,
+.hull__rect3::after {
+   position: absolute;
+   top: 0;
+   content: '';
+   width: 100%;
+   height: 10px;
+   background-color: #fff;
+}
+
+/* -----hull__windows----- */
+
+.hull__windows div {
+   position: relative;
+   display: inline-block;
+   top: -20px;
+   left: 120px;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color: #7cb2fc;
+   box-shadow: 1px 1px 6px 2px rgba(3, 86, 178, 0.93) inset;
+}
+
+.hull__windows div::before {
+   position: absolute;
+   top: 20px;
+   left: 3px;
+   content: '';
+   width: 43px;
+   height: 9px;
+   border-radius: 10px;
+   background-color: #fff;
+   transform: rotate(-34deg);
+}
+
+.hull__windows div:not(:last-child) {
+   margin-right: 50px;
+}
+
+/* -----cabin----- */
+
+.boat__cabin>div {
+   position: absolute;
+}
+
+.cabin__rect,
+.cabin__oval {
+   background-color: #a7afb1;
+}
+
+.cabin__rect {
+   top: 114.5px;
+   left: 230px;
+   width: 150px;
+   height: 60px;
+}
+
+.cabin__rect:before,
+.cabin__rect:after {
+   position: absolute;
+   content: '';
+   top: 0;
+   width: 0;
+   height: 0;
+   border-bottom: 60px solid #a7afb1;
+}
+
+.cabin__rect:before {
+   left: -59px;
+   border-left: 60px solid transparent;
+}
+
+.cabin__rect:after {
+   right: -59px;
+   border-right: 60px solid transparent;
+}
+
+.cabin__oval {
+   top: 144.5px;
+   left: 40px;
+   width: 180px;
+   height: 30px;
+   border-radius: 100% 0% 72% 28% / 100% 100% 0% 0%;
+}
+
+.cabin__window-rect1 {
+   top: 123px;
+   left: 290px;
+   width: 80px;
+   height: 35px;
+   background-color: #7db1fc;
+   border-top: 3px solid #577eb1;
+   border-right: 4px solid #577eb1;
+   transform: skew(40deg);
+}
+
+.cabin__window-rect1::before {
+   position: absolute;
+   top: -3px;
+   left: -19px;
+   content: '';
+   width: 40px;
+   height: 35px;
+   border-top: 3px solid #577eb1;
+   background-color: #7db1fc;
+   transform: skew(-25deg);
+}
+
+.cabin__window-glare,
+.cabin__window-glare2 {
+   top: 126px;
+   height: 32px;
+   background-color: #b4d2fe;
+   transform: skew(-25deg);
+}
+
+.cabin__window-glare {
+   left: 304px;
+   width: 9px;
+}
+
+.cabin__window-glare2 {
+   left: 335px;
+   width: 5px;
+}
+
+/* -----rigging----- */
+
+.rigging>div,
+.rope>div {
+   position: absolute;
+}
+
+.rigging__mast {
+   top: -185.5px;
+   left: 245px;
+   width: 10px;
+   height: 360px;
+   border-radius: 2px;
+   background-color: #7d8588;
+}
+
+.rigging__mast::before {
+   position: absolute;
+   top: 290px;
+   content: '';
+   width: 195px;
+   height: 10px;
+   background-color: #7d8588;
+   transform-origin: top left;
+   transform: rotate(180deg);
+}
+
+/* -----sail----- */
+
+.sail__origin {
+   position: absolute;
+   bottom: 225px;
+   left: 52px;
+   width: 0;
+   height: 0;
+   border-bottom: 260px solid #5ca1ff;
+   border-left: 180px solid transparent;
+}
+
+.sail__curved {
+   position: absolute;
+   width: 0;
+   height: 0;
+   bottom: 215px;
+   left: 290px;
+   border-bottom: 260px solid #5ca1ff;
+   border-right: 180px solid transparent;
+   transform: skew(10deg) scale(1.1);
+}
+
+/* -----strop----- */
+
+.rope>div {
+   bottom: 210px;
+   left: 62px;
+   width: 2px;
+   height: 25px;
+   background-color: #474d67;
+   transform: rotate(25deg);
+}
+
+.rope>div:nth-child(2) {
+   bottom: 208px;
+   left: 235px;
+   transform: rotate(-43deg)
+}
+
+.rope>div:nth-child(3) {
+   bottom: 160px;
+   left: 225px;
+   height: 58px;
+   transform: rotate(-43deg)
+}
+
+.rope>div:nth-child(4) {
+   bottom: 170px;
+   left: 238px;
+   height: 40px;
+   transform: rotate(-43deg)
+}
+
+.rope>div:nth-child(5) {
+   bottom: 145px;
+   left: 280px;
+   height: 70px;
+   transform: rotate(49deg)
+}
+
+.rope>div:nth-child(6) {
+   bottom: 474px;
+   left: 237px;
+   height: 19px;
+   transform: rotate(64deg)
+}
+
+.rope>div:nth-child(7) {
+   bottom: 468px;
+   left: 257px;
+   height: 25px;
+   transform: rotate(-45deg)
+}
+
+.rope>div:nth-child(8) {
+   bottom: 129.5px;
+   left: 500px;
+   height: 85px;
+   transform: rotate(-20deg)
+}
+
+/* -----rail----- */
+
+.rail__stanchions>div,
+.rail__stanchions>div:nth-child(1)::after {
+   border-radius: 20%;
+   background-color: #474d67;
+}
+
+.rail__stanchions>div {
+   position: absolute;
+   top: 124.5px;
+   left: -40px;
+   width: 3px;
+   height: 50px;
+}
+
+.rail__stanchions>div:nth-child(1)::after {
+   content: '';
+   width: 2px;
+   height: 77px;
+   transform-origin: top left;
+
+   transform: rotate(-90deg) translate(-2px, 1px);
+}
+
+.rail__stanchions>div:nth-child(2) {
+   left: 36px;
+}
+
+.rail__stanchions>div:nth-child(3) {
+   left: 160px;
+}
+
+.rail__stanchions>div:nth-child(4) {
+   left: 284px;
+}
+
+.rail__stanchions>div:nth-child(5) {
+   left: 408px;
+}
+
+.rail__stanchions>div:nth-child(6) {
+   left: 532px;
+}
+
+/* ----- */
+
+.rail__lifelines>div,
+.rail__lifelines>div::before {
+   position: absolute;
+   width: 121px;
+   height: 50px;
+   border-bottom: 2px solid #4372c2;
+   border-radius: 50px / 15px;
+}
+
+.rail__lifelines>div {
+   top: 97px;
+   left: 39px;
+   background-color: transparent;
+}
+
+.rail__lifelines>div::before {
+   content: '';
+   top: 16px;
+   left: 0;
+}
+
+.rail__lifelines>div:nth-child(2) {
+   left: 163px;
+}
+
+.rail__lifelines>div:nth-child(3) {
+   left: 287px;
+}
+
+.rail__lifelines>div:nth-child(4) {
+   left: 411px;
+}
+
+/* -----fenders----- */
+
+.fenders__item>div {
+   position: absolute;
+}
+
+.fender__line,
+.fender__lock,
+.fender__top {
+   background-color: #474d67;
+}
+
+.fender__line {
+   top: 163px;
+   left: 97px;
+   width: 2px;
+   height: 20px;
+}
+
+.fender__lock {
+   top: 183px;
+   left: 94.5px;
+   width: 7px;
+   height: 5px;
+   border-radius: 20%;
+}
+
+.fender__top {
+   top: 186px;
+   left: 91.4px;
+   width: 14px;
+   height: 7px;
+   border-radius: 50% 50% 0 0;
+   border-bottom: none;
+}
+
+.fender__circle,
+.fender__circle::before {
+   width: 35px;
+   height: 30px;
+   border-radius: 50%;
+}
+
+.fender__circle {
+   top: 191px;
+   left: 81px;
+   background-color: #0052b8;
+}
+
+.fender__circle::before {
+   position: absolute;
+   content: '';
+   top: 1%;
+   left: 3%;
+   background-color: #3679d0;
+   background: linear-gradient(90deg, rgba(54, 121, 208, 1) 0%, rgba(0, 82, 184, 1) 32%);
+   transform: scale(.8);
+}
+
+.fender--right {
+   position: absolute;
+   top: 0;
+   left: 250px;
+}
+
+/* -------- */
+
+
+@keyframes boat-wave {
+   0% {
+      transform: rotate(1deg);
+   }
+
+   100% {
+      transform: rotate(-1deg);
+   }
+}
+
+@keyframes boat-move {
+   0% {
+      transform: translateX(0px) scale(.7);
+   }
+
+   100% {
+      transform: translateX(670px) scale(.7);
+   }
+}
+
+@keyframes towed-element-arrival {
+   0% {
+      opacity: 0;
+      top: -40px;
+      transform: scale(.2);
+      /* visibility: hidden; */
+   }
+
+   40% {
+      left: 50px;
+      opacity: .9;
+      transform: rotate(20deg);
+   }
+
+   60% {
+      transform: rotate(-15deg)
+   }
+
+   70% {
+      transform: rotate(-18deg)
+   }
+
+   80% {
+      transform: rotate(0);
+      top: 150px;
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(-40px) rotate(0);
+   }
+}
+
+@keyframes towed-element-loading {
+   100% {
+      transform: translate(-280px, 15px) rotate(10deg);
+   }
+}
+
+@keyframes towed-element-carry {
+
+   100% {
+      transform: translate(-410px, -26px) rotate(0deg);
+   }
+}
+
+@keyframes towed-element-move {
+   100% {
+      transform: translate(-1600px, -26px);
+   }
+}
+
+@keyframes towed-element-headline {
+   0% {
+      background-color: #a11806;
+   }
+
+   99.9% {
+      box-shadow: 0 4px 5px rgba(255, 255, 255, 0.9),
+         0 7px 10px #a11806,
+         0 12px 20px #ff8000,
+         0 15px 40px #ff0;
+   }
+}
+
+@keyframes tow-truck-move-first {
+   0% {
+      transform: translateX(800px);
+      opacity: 1;
+   }
+
+   100% {
+      transform: translateX(-300px);
+      opacity: 1;
+      visibility: visible;
+   }
+}
+
+@keyframes tow-truck-move-second {
+
+   100% {
+      transform: translateX(-1500px);
+   }
+}
+
+@keyframes tow-truck__line1 {
+   100% {
+      top: 72px;
+      width: 5px;
+      height: 78px;
+      transform: rotate(40deg);
+   }
+}
+
+@keyframes tow-truck__line1-return {
+   100% {
+      top: 72px;
+      left: 240px;
+      width: 5px;
+      height: 78px;
+      transform: rotate(0);
+   }
+}
+
+@keyframes tow-truck__line2 {
+   100% {
+      top: 82px;
+      width: 5px;
+      height: 67px;
+      transform: rotate(40deg);
+   }
+}
+
+@keyframes tow-truck__line2-return {
+   100% {
+      top: 72px;
+      width: 5px;
+      height: 78px;
+      transform: rotate(0);
+   }
+}
+
+@keyframes tow-truck__line3 {
+   100% {
+      top: 107px;
+      width: 400px;
+      height: 8px;
+      transform: rotate(10deg)
+   }
+}
+
+@keyframes tow-truck__line3-return {
+   100% {
+      top: 70px;
+      width: 220px;
+      height: 8px;
+      transform: rotate(0);
+   }
+}
+
+@keyframes tow-truck-wheels-rotate-first {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(-360deg);
+   }
+}
+
+
+@keyframes tow-truck-wheels-rotate-second {
+
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(-360deg);
+   }
+}
+
+@keyframes tow-truck__strobe-light {
+   0% {
+      transform: rotateY(0deg);
+   }
+
+   100% {
+      transform: rotateY(360deg);
+   }
+}
+
+@keyframes mark-text {
+   100% {
+      transform: scale(1.2);
+      text-decoration: underline;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
