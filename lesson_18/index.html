@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 18</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <p>Lesson 18</p>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main__container">
+                <article class="main__article article-main">
+
+                    <div class="article-main__img">
+                        <picture>
+                            <source srcset="#" type="image/webp">
+                            <img src="#" alt="Img description">
+                        </picture>
+                    </div>
+
+                    <ul class="article-main__meta article-meta">
+                        <li>
+                            <img src="#" alt="Meta tag icon food">
+                            <a href="#">Food</a>
+                        </li>
+                        <li>
+                            <img src="#" alt="Meta tag icon admin">
+                            <a href="#">By Admin</a>
+                        </li>
+                        <li>
+                            <img src="#" alt="Meta tag icon comments">
+                            <a href="#">65 Comments</a>
+                        </li>
+                    </ul>
+                    <h1 class="article-main__title title">Maecenas tempor urna sed quam mollis, a placerat dui fringill Suspendisse.</h1>
+                    <div class="article-main__author-info author-info">
+                            <div>
+                                <div class="author-info__img">
+                                    <img src="#" alt="Cameron Williamson">
+                                </div>
+                                <div class="author-info__content">
+                                    <a href="#">Cameron Williamson</a>
+                                    <time datetime="2021-04-04">4 April, 2021</time><span>6 min read</span>
+                                </div>
+                            </div>
+                            <ul class="author-info__socials">
+                                <li>
+                                    <a class="facebook" href="#" aria-label="Go to facebook profile" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <svg aria-hidden="true" focusable="false"></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="#" aria-label="Go to twitter profile" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <svg aria-hidden="true" focusable="false"></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="pinterest" href="#" aria-label="Go to pinterest profile" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <svg aria-hidden="true" focusable="false"></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="instagram" href="#" aria-label="Go to instagram profile" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <svg aria-hidden="true" focusable="false"></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="share-icon" href="#" aria-label="Share article" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <svg aria-hidden="true" focusable="false"></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+
+                    <section class="article-main__description description">
+                        <h2 class="description__title">Maecenas lacinia felis nec placerat sollicitudin. Quisque placerat dolor at scelerisque imperdiet. Phasellus tristique felis dolor.</h2>
+                        <div class="description__content">
+                            <p></p>
+                            <p></p>
+                            <div class="description__images-block">
+                                <picture>
+                                    <source srcset="#/" type="image/webp">
+                                    <img src="#" alt="Img description">
+                                </picture>
+                                <picture>
+                                    <source srcset="#/" type="image/webp">
+                                    <img src="#" alt="Img description">
+                                </picture>
+                            </div>
+                            <p></p>
+                        </div>
+                    </section>
+
+                    <section class="article-main__promo promo">
+                        <img src="#" alt="Img description">
+                        <div class="promo__content">
+                            <span class="promo__label">SUMMER SALES</span>
+                            <h2>Fresh Fruit</h2>
+                            <a class="shop-now-link" href="#">Shop now</a>
+                        </div>
+                        <div class="promo__discount-mark">
+                            UP TO
+                            <span>56%</span>
+                            Off
+                        </div>
+                    </section>
+
+                    <section class="article-main__comment-form comment-form">
+                        <h2 class="comment-form__title">Leave a Comment</h2>
+                        <form action="#" method="post" name="comment_form" accept-charset="UTF-8">
+                            <div class="comment-form__form form">
+                                <div class="form__row">
+                                    <div>
+                                        <label for="user_name">Full Name</label>
+                                        <input type="text" name="user_name" id="user_name" placeholder="Full Name"
+                                            required>
+                                    </div>
+                                    <div>
+                                        <label for="user_email">Email</label>
+                                        <input type="email" name="user_email" id="user_email" placeholder="Email"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <div>
+                                        <label for="user_comment">Message</label>
+                                        <textarea name="user_comment" id="user_comment"
+                                            placeholder="Write your comment here…" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form__row-checkbox checkbox">
+                                    <div class="checkbox__item">
+                                        <input type="checkbox" name="save_user_name" id="save_user_name"
+                                            class="checkbox__input">
+                                        <label for="save_user_name" class="checkbox__label">Save my name and email in
+                                            this browser for the next time I comment.</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="button">Post Comments</button>
+                            </div>
+
+                        </form>
+                    </section>
+
+                    <section class="article-main__comments comments">
+                        <h2 class="comments__title">Comments</h2>
+                        <ul class="comments__items">
+                            <li>
+                                <article class="comments__item item-comments">
+                                    <div class="item-comments__img">
+                                        <img src="#" alt="Annette Black">
+                                    </div>
+
+                                    <div class="item-comments__content">
+                                        <div class="item-comments__author">
+                                            <h3><a href="#">Annette Black</a></h3>
+                                            <time datetime="2021-04-26">26 Apr, 2021</time>
+                                        </div>
+                                        <p></p>
+                                    </div>
+
+                                </article>
+                            </li>
+                            <li>
+                                <article class="comments__item item-comments">
+                                    <div class="item-comments__img">
+                                        <img src="#" alt="Devon Lane">
+                                    </div>
+
+                                    <div class="item-comments__content">
+                                        <div class="item-comments__author">
+                                            <h3><a href="#">Devon Lane</a></h3>
+                                            <time datetime="2021-04-24">24 Apr, 2021</time>
+                                        </div>
+                                        <p></p>
+                                    </div>
+
+                                </article>
+                            </li>
+                            <li>
+                                <article class="comments__item item-comments">
+                                    <div class="item-comments__img">
+                                        <img src="#" alt="Jacob Jones">
+                                    </div>
+
+                                    <div class="item-comments__content">
+                                        <div class="item-comments__author">
+                                            <h3><a href="#">Jacob Jones</a></h3>
+                                            <time datetime="2021-04-20">20 Apr, 2021</time>
+                                        </div>
+                                        <p></p>
+                                    </div>
+
+                                </article>
+                            </li>
+                            <li>
+                                <article class="comments__item item-comments">
+                                    <div class="item-comments__img">
+                                        <img src="#" alt="Jane Cooper">
+                                    </div>
+
+                                    <div class="item-comments__content">
+                                        <div class="item-comments__author">
+                                            <h3><a href="#">Jane Cooper</a></h3>
+                                            <time datetime="2021-04-18">18 Apr, 2021</time>
+                                        </div>
+                                        <p></p>
+                                    </div>
+
+                                </article>
+                            </li>
+                            <li>
+                                <article class="comments__item item-comments">
+                                    <div class="item-comments__img">
+                                        <img src="#" alt="Darrell Steward">
+                                    </div>
+
+                                    <div class="item-comments__content">
+                                        <div class="item-comments__author">
+                                            <h3><a href="#">Darrell Steward</a></h3>
+                                            <time datetime="2021-04-07">7 Apr, 2021</time>
+                                        </div>
+                                        <p></p>
+                                    </div>
+
+                                </article>
+                            </li>
+                        </ul>
+
+                        <a class="load-more-link" href="#">Load More</a>
+                    </section>
+
+                </article>
+
+                <aside class="main__aside aside-main">
+
+                    <form action="#" method="get" name="search_form" accept-charset="UTF-8">
+                        <div class="aside-main__search-form search-form">
+                            <input class="search-form__input" type="search" name="search_data" id="search_data"
+                                placeholder="Search..." required>
+                            <button class="search-form__button" type="submit" aria-label="Start search"></button>
+                        </div>
+                    </form>
+
+                    <section class="aside-main__top-categories top-categories">
+                        <h3 class="top-categories__title widget-title">Top Categories</h3>
+                        <ul class="top-categories__items">
+                            <li><a href="#">Fresh Fruit</a><span>(134)</span></li>
+                            <li><a href="#">Vegetables</a><span>(150)</span></li>
+                            <li><a href="#">Cooking</a><span>(34)</span></li>
+                            <li><a href="#">Snacks</a><span>(47)</span></li>
+                            <li><a href="#">Beverages</a><span>(43)</span></li>
+                            <li><a href="#">Beauty & Health</a><span>(38)</span></li>
+                            <li><a href="#">Bread & Bakery</a><span>(15)</span></li>
+                        </ul>
+                    </section>
+
+                    <section class="aside-main__popular-tag popular-tag">
+                        <h3 class="popular-tag__title widget-title">Popular Tag</h3>
+                        <ul class="popular-tag__items">
+                            <li><a href="#">Healthy</a></li>
+                            <li><a href="#">Low fat</a></li>
+                            <li><a href="#">Vegetarian</a></li>
+                            <li><a href="#">Bread</a></li>
+                            <li><a href="#">Kid foods</a></li>
+                            <li><a href="#">Vitamins</a></li>
+                            <li><a href="#">Snacks</a></li>
+                            <li><a href="#">Tiffin</a></li>
+                            <li><a href="#">Meat</a></li>
+                            <li><a href="#">Launch</a></li>
+                            <li><a href="#">Dinner</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="aside-main__gallery gallery">
+                        <h3 class="gallery__title widget-title">Our Gallery</h3>
+                        <ul class="gallery__items">
+                            <li>
+                                <a class="gallery__image" href="#">
+                                    <picture>
+                                        <source srcset="#" type="image/webp">
+                                        <img src="#" alt="Img description">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="gallery__image" href="#">
+                                    <picture>
+                                        <source srcset="#" type="image/webp">
+                                        <img src="#" alt="Img description">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="gallery__image" href="#">
+                                    <picture>
+                                        <source srcset="#" type="image/webp">
+                                        <img src="#" alt="Img description">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="gallery__image" href="#">
+                                    <picture>
+                                        <source srcset="#" type="image/webp">
+                                        <img src="#" alt="Img description">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="gallery__image" href="#">
+                                    <picture>
+                                        <source srcset="#" type="image/webp">
+                                        <img src="#" alt="Img description">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="gallery__image" href="#">
+                                    <picture>
+                                        <source srcset="#" type="image/webp">
+                                        <img src="#" alt="Img description">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="gallery__image" href="#">
+                                    <picture>
+                                        <source srcset="#" type="image/webp">
+                                        <img src="#" alt="Img description">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="gallery__image" href="#">
+                                    <picture>
+                                        <source srcset="#" type="image/webp">
+                                        <img src="#" alt="Img description">
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="aside-main__recently recently">
+                        <h3 class="recently__title widget-title">Recently Added</h3>
+                        <ul class="recently__items">
+                            <li>
+                                <article class="recently__item item-recently">
+                                    <div class="item-recently__image">
+                                        <img src="#" alt="Img description">
+                                    </div>
+                                    <div class="item-recently__content">
+                                        <h4><a class="item-recently__link" href="#">Curabitur porttitor orci eget nequ accumsan.</a></h4>
+                                        <time datetime="2021-04-25">Apr 25, 2021</time>
+                                    </div>
+                                </article>
+                            </li>
+                            <li>
+                                <article class="recently__item item-recently">
+                                    <div class="item-recently__image">
+                                        <img src="#" alt="Img description">
+                                    </div>
+                                    <div class="item-recently__content">
+                                        <h4><a class="item-recently__link" href="#">Donec mattis arcu faucibus suscipit viverra.</a></h4>
+                                        <time datetime="2021-04-25">Apr 25, 2021</time>
+                                    </div>
+                                </article>
+                            </li>
+                            <li>
+                                <article class="recently__item item-recently">
+                                    <div class="item-recently__image">
+                                        <img src="#" alt="Img description">
+                                    </div>
+                                    <div class="item-recently__content">
+                                        <h4><a class="item-recently__link" href="#">Quisque posuere tempus rutrum. Integer velit ex.</a></h4>
+                                        <time datetime="2021-04-25">Apr 25, 2021</time>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+
+                </aside>
+
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                &#169; 2025
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

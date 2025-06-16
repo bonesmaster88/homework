@@ -1,0 +1,23 @@
+@import url("../fonts/fonts.css");
+@import url("iconsfont.css");
+@import url("reset.css");
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   overflow: clip;
+   font-size: 16px;
+   color: #000;
+}
+
+[class*="__container"] {
+   max-width: 1230px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.main {
+   flex-grow: 1;
+}
+
