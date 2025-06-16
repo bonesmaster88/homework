@@ -1,0 +1,176 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #1E293B;
+}
+
+/* header */
+
+#main-menu ul {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .8);
+}
+
+/* main */
+
+h1,
+h2 {
+    text-align: center;
+    line-height: 2.5;
+    font-weight: 700;
+    word-spacing: 2px;
+    white-space: nowrap;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #2EB72E;
+    text-shadow: 3px 3px 1px rgba(30, 41, 59, 0.19);
+}
+
+h1 + p,
+#server-client + p,
+#network-architectures h2 + p {
+    text-align: center;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 24px;
+    color: #8B0000;
+}
+
+h3 {
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 2;
+}
+
+/* -- */
+
+.server-component > h3 ~ p {
+    font-size: 16px;
+}
+
+.server-component ul span {
+    font-weight: 500;
+    color: #000;
+    font-size: 16px;
+}
+
+/* -- */
+
+.internet-work p span {
+    color: #005353;
+}
+
+.internet-work p + p,
+.internet-work p + p span,
+#network-architectures p + p,
+#network-architectures p + p span {
+    font-size: 16px;
+    font-family: "Roboto mono", sans-serif;
+    font-weight: 500;
+}
+
+.internet-work p + p span,
+#network-architectures p + p span {
+    color: #8B3F00;
+}
+
+.internet-work p > span + span {
+    text-decoration: line-through;
+    text-decoration-color: rgba(0, 0, 0, .3);
+    color: rgba(0, 0, 0, .5);
+}
+
+.internet-work p > span + span + span {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgba(0, 0, 0, .3);
+    color: #1E293B;
+}
+
+/* -- */
+
+#url-interaction + ul span {
+    color: #2EB72E;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* -- */
+
+.server-component > p > span,
+#network-architectures h2 + p span,
+#client-types span {
+    color: rgba(0, 0, 0, .6);
+    font-style: oblique;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: overline;
+    text-decoration-color: rgba(0, 0, 0, .2);
+}
+
+/* -- */
+.server-features span {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.server-features mark {
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* -- */
+
+#network-architectures h3 {
+    color: rgba(139, 0, 0, .9);
+}
+
+/* footer */
+
+footer {
+    font-size: 13px;
+    line-height: 1.3;
+    color: rgba(0, 0, 0, .6);
+}
+
+.sources {
+    text-align: right;
+}
+
+/* Ecobazar content */
+
+.bazar-section {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.eco-text {
+    color: #808080;
+}
+
+.eco-tilte {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1A1A1A;
+}
