@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 18</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <h1>Homework_18</h1>
+            </div>
+        </header>
+
+        <main class="page">
+            <div class="hero">
+                <img class="hero__bg" src="img/bg.webp" alt="#">
+                <div class="hero__container">
+                    <div class="hero__content">
+                        <div class="hero__inner">
+                            <div>
+                                <p>width</p>
+                                <p>300px</p>
+                                <p>18.75rem</p>
+                                <p>(300/16)</p>
+                            </div>
+                            <div>
+                                <p>padding</p>
+                                <p>8px</p>
+                                <p>0.5rem</p>
+                                <p>(8/16)</p>
+                            </div>
+                            <div class="mark">
+                                <p>margin-bottom</p>
+                                <p>5px</p>
+                                <p>0.35em</p>
+                                <p>(4.9/14)</p>
+                            </div>
+                            <div>
+                                <p>height</p>
+                                <p>150px</p>
+                                <p>9.375rem</p>
+                                <p>(150/16)</p>
+                            </div>
+                            <div>
+                                <p>border</p>
+                                <p>1px</p>
+                                <p>0.0625rem</p>
+                                <p>(1/16)</p>
+                            </div>
+                            <div>
+                                <p>font-size</p>
+                                <p class="mark">14px</p>
+                                <p>0.875rem</p>
+                                <p>(14/16)</p>
+                            </div>
+                        </div>
+                        <div class="hero__cursor">
+                            <a href="#">
+                                <img src="img/1.webp" alt="Image">
+                            </a>
+                            <a href="#">
+                                <img src="img/5.webp" alt="Image">
+                            </a>
+                            <a href="#">
+                                <img src="img/4.webp" alt="Image">
+                            </a>
+                            <a href="#">
+                                <img src="img/3.webp" alt="Image">
+                            </a>
+                        </div>
+                        <div class="hero__logic logic">
+                            <div class="logic__1">Free download</div>
+                            <div class="logic__2">Free download</div>
+                            <div class="logic__3">Free download</div>
+                            <div class="logic__4">Free download</div>
+                            <div class="logic__5">Free download</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second">
+                <div class="second__container">
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="img/2.webp" alt="Image">
+                        </div>
+                        <h2 class="card__title">width: clamp (12.5rem, 100vw, 31.25rem)</h2>
+                        <p>Ширина елемента коливається від 200 до 500 пікселів, адаптуючись до повної ширини вікна
+                            браузера.</p>
+                        <p>100vw - це 100% від ширини вікна браузера (viewport), включаючи область з полосами прокрутки.
+                        </p>
+                    </div>
+
+                    <div class="card card--vw">
+                        <div class="card__img">
+                            <!-- <img src="img/2.webp" alt="Image"> -->
+                            <img src="img/2.webp" alt="Image">
+                        </div>
+                        <h2 class="card__title">width: clamp (12.5rem, calc (100vw - 30px), 31.25rem)</h2>
+                        <p>Ширина елемента коливається від 200 до 500 пікселів, адаптуючись до ширини вікна браузера
+                            мінус 30 пікселів відступу. Це забезпечує респонсивність з невеликими полями по краях у
+                            заданих межах.</p>
+                    </div>
+
+                    <div class="card card--minmax">
+                        <div class="card__img">
+                            <img src="img/2.webp" alt="Image">
+                        </div>
+                        <h2 class="card__title">width: min (31.25rem, 100%)</h2>
+                        <p>Ширина елемента буде максимум 500 пікселів або 100% від батьківського елемента, залежно від
+                            того, що менше.</p>
+                        <p>100% - це 100% від ширини батьківського елемента, не враховуючи viewport.</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                &#169; 2025
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
