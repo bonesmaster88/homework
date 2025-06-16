@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 14</title>
+</head>
+
+<body>
+    <p class="test"></p>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <h1 class="title title--small title--center">Shopping Cart. Checkout.</h1>
+            </div>
+        </header>
+        <main class="page">
+            <div class="checkout">
+                <div class="checkout__container">
+                    <form action="#" method="post" name="billing_form" accept-charset="UTF-8">
+                        <div class="checkout__form form">
+                            <!-- <div class="form__billing">
+                                <h2 class="title">Billing Information</h2>
+                                <div class="form__row form__row--input-280">
+                                    <div>
+                                        <label for="user_name">First name</label>
+                                        <input type="text" name="user_name" id="user_name" placeholder="Your first name"
+                                            required>
+                                    </div>
+                                    <div>
+                                        <label for="user_last_name">Last name</label>
+                                        <input type="text" name="user_last_name" id="user_last_name"
+                                            placeholder="Your last name" required>
+                                    </div>
+                                    <div>
+                                        <label for="user_company">Company Name (optional)</label>
+                                        <input type="text" name="user_company" id="user_company"
+                                            placeholder="Company name">
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <div>
+                                        <label for="user_address">Street Address</label>
+                                        <input type="text" name="user_address" id="user_address"
+                                            placeholder="Your street address" required>
+                                    </div>
+                                </div>
+                                <div class="form__row form__row--input-280">
+                                    <div>
+                                        <label for="user_country" >Country / Region</label>
+                                        <select name="user_country" id="user_country" required>
+                                            <option value="" disabled selected hidden>Select</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="USA">USA</option>
+                                            <option value="Portugal">Portugal</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="user_states">States</label>
+                                        <select name="user_states" id="user_states" required>
+                                            <option value="" disabled selected hidden>Select</option>
+                                            <option value="Alberta">Alberta</option>
+                                            <option value="British Columbia">British Columbia</option>
+                                            <option value="Ontario">Ontario</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="user_zipcode">Zip Code</label>
+                                        <input type="text" name="user_zipcode" id="user_zipcode" placeholder="Zip Code"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="form__row form__row--input-428">
+                                    <div>
+                                        <label for="user_email">Email</label>
+                                        <input type="email" name="user_email" id="user_email"
+                                            placeholder="Email Address" required>
+                                    </div>
+                                    <div>
+                                        <label for="user_tel">Phone</label>
+                                        <input type="tel" name="user_tel" id="user_tel" placeholder="Phone number"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="form__row-checkbox checkbox">
+                                    <div class="checkbox__item">
+                                        <input type="checkbox" name="user_dif_address" id="user_dif_address"
+                                            class="checkbox__input">
+                                        <label for="user_dif_address" class="checkbox__label">Ship to a different
+                                            address</label>
+                                    </div>
+                                </div>
+                               
+                                <h2 class="title">Additional Info</h2>
+                                <div class="form__row">
+                                    <div>
+                                        <label for="user_notes">Order Notes (Optional)</label>
+                                        <textarea name="user_notes" id="user_notes"
+                                            placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                                    </div>
+
+                                </div>
+                            </div> !-->
+                            <div class="form__summary summary">
+                                <div class="summary__added-items">
+                                    <h2 class="title title--small">Order summary</h2>
+                                    <div>
+                                        <div class="summary__item">
+                                            <div class="summary__row">
+                                                <a class="summary__image-thumbnail" href="#">
+                                                    <img src="img/green-capsicum.webp" alt="Green capsicum">
+                                                </a>
+                                                <a class="summary__link" href="#">Green Capsicum</a>
+                                                <label>
+                                                    x
+                                                    <input type="number" name="item_quantity[]" value="1" min="1" max="1000">
+                                                </label>
+                                            </div>
+                                            <span>$70.00</span>
+                                        </div>
+                                        <div class="summary__item">
+                                            <div class="summary__row">
+                                                <a class="summary__image-thumbnail" href="#">
+                                                    <img src="img/red-capsicum.webp" alt="Red capsicum">
+                                                </a>
+                                                <a class="summary__link" href="#">Red Capsicum</a>
+                                                <label>
+                                                    x
+                                                    <input type="number" name="item_quantity[]" value="1" min="1" max="1000">
+                                                </label>
+                                            </div>
+                                            <span>$14.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="summary__details">
+                                        <div class="summary__item">
+                                            <p>Subtotal:</p>
+                                            <span>$84.00</span>
+                                        </div>
+                                        <div class="summary__item">
+                                            <p>Shipping:</p>
+                                            <span>Free</span>
+                                        </div>
+                                        <div class="summary__item total">
+                                            <p>Total:</p>
+                                            <span>$84.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="summary__payment">
+                                    <h2 class="title title--small">Payment Method</h2>
+                                    <div class="summary__item-radio radio">
+                                        <div class="radio__item">
+                                            <input type="radio" name="order_payment" id="cash_payment" checked
+                                                class="radio__input">
+                                            <label for="cash_payment" class="radio__label">Cash on Delivery</label>
+                                        </div>
+                                        <div class="radio__item">
+                                            <input type="radio" name="order_payment" id="paypal_payment"
+                                                class="radio__input">
+                                            <label for="paypal_payment" class="radio__label">Paypal</label>
+                                        </div>
+                                        <div class="radio__item">
+                                            <input type="radio" name="order_payment" id="amazon_payment"
+                                                class="radio__input">
+                                            <label for="amazon_payment" class="radio__label">Amazon Pay</label>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <button type="submit" class="button">Place Order</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="footer__container">&#174; 2025</div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
