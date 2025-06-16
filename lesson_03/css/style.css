@@ -1,0 +1,91 @@
+@import url("reset.css");
+
+*{
+    color: midnightblue;
+}
+
+.menu.links a{
+    color: gray;
+}
+
+#main-title{
+    color: green;
+}
+.quotes p{
+    color: mediumpurple;
+}
+
+h2{
+    color: red;
+}
+
+h2 + p{
+    color: brown;
+}
+
+h3{
+    color: darkcyan;
+}
+
+[class*="link"]{
+    color: darkolivegreen;
+}
+
+.vyshyvanka-color *{
+    color: rosybrown;
+}
+
+.vyshyvanka-color span{
+    color: darkorange;
+}
+
+.ornament > li{
+    color: blue;
+}
+
+.animals,
+.animals-elem{
+    color: darksalmon;
+}
+
+#unesco ~ div span{
+    color: black;
+}
+
+.footer .source a{
+    color: skyblue;
+}
+
+/* test homework */
+
+.first-ul > li{
+    color: red;
+}
+
+.first-ul > li ~ li{
+    color: green;
+}
+
+.first-ul > li ul > li{
+    color: blue;
+}
+
+.first-ul > li ul > li ~ li{
+    color: orange;
+}
+.first-ul > li ul > li ~ li > span{
+    color: #a0f0fc;
+}
+
+.first-ul > li ul > li ~ li > ol li{
+    color: #4597f7;
+}
+
+.first-ul > li ul > li ~ li > ol li ~ li,
+.first-ul > li ul > li ~ li > ol li ~ li span{
+    color: #5d5d5d;
+}
+
+
+
+
